@@ -1,33 +1,30 @@
 version: 2
 updates:
-  # Gradle dependencies. Major versions (for example an Android Gradle Plugin
-  # major bump) are ignored on purpose: a compiler/toolchain major needs a
-  # migration branch and full release-gate verification, not an automated PR.
-  # Minor and patch updates arrive grouped as one PR per week.
+  # Gradle dependencies are pinned on purpose: the 0.2.3 release was built,
+  # tested and signed with the exact toolchain recorded in the build report.
+  # Routine version PRs are therefore disabled (limit 0). Dependabot security
+  # updates are unaffected and still open a PR when a vulnerable dependency is
+  # reported; a routine upgrade is done on a migration branch with the full
+  # release gate (unit tests, instrumented tests, lint, signature and size
+  # checks) and the README/CHANGELOG evidence updated in the same commit.
   - package-ecosystem: gradle
     directory: "/"
     schedule:
       interval: weekly
       day: monday
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 0
     commit-message:
       prefix: "chore(deps)"
     labels:
       - dependencies
-    groups:
-      gradle-minor-patch:
-        patterns:
-          - "*"
-        update-types:
-          - minor
-          - patch
     ignore:
       - dependency-name: "*"
         update-types:
           - version-update:semver-major
 
-  # GitHub Actions versions. Same rule: major action bumps are reviewed by hand
-  # because they can change the runner image, caching and Node runtime.
+  # GitHub Actions versions are low-risk and worth keeping current. Major
+  # action bumps stay ignored because they can change the runner image, caching
+  # and Node runtime; minor and patch updates arrive grouped, once a week.
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
