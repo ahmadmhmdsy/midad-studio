@@ -153,7 +153,7 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.8.5")
 
     // Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0")
 
     // EXIF metadata (photo orientation)
     implementation("androidx.exifinterface:exifinterface:1.3.7")
