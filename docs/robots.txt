@@ -1,0 +1,8 @@
+# Midad Studio — https://ahmadmhmdsy.github.io/midad-studio/
+# The site is a static, script-free GitHub Pages site. Everything that is
+# meant to be public is indexable; the site itself makes no external requests.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmadmhmdsy.github.io/midad-studio/sitemap.xml

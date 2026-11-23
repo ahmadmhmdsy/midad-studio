@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "id": "mediapipe-selfie-segmenter-256-f16",
+      "displayName": "MediaPipe Selfie Segmenter (square, 256x256, float16)",
+      "description": "Binary person/background segmentation for portrait background blur, background replacement and subject cutout. Outputs one float32 person-confidence mask. Smallest verified MediaPipe segmenter and the recommended default BUNDLED model for the MVP (249,537 bytes, under the 5 MB bundle budget).",
+      "licenseSpdx": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licenseEvidenceUrl": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Selfie%20Segmentation.pdf",
+      "sourceUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segmenter/float16/1/selfie_segmenter.tflite",
+      "downloadUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segmenter/float16/1/selfie_segmenter.tflite",
+      "latestAliasUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segmenter/float16/latest/selfie_segmenter.tflite",
+      "version": "1",
+      "fileName": "selfie_segmenter.tflite",
+      "assetPath": "models/selfie_segmenter.tflite",
+      "sizeBytes": 249537,
+      "sha256": "191ac9529ae506ee0beefa6b2c945a172dab9d07d1e802a290a4e4038226658b",
+      "distribution": "BUNDLED",
+      "runtime": "tflite",
+      "artifactLastModifiedUtc": "2023-05-07T05:14:12Z",
+      "inputSpec": {
+        "shape": [
+          1,
+          256,
+          256,
+          3
+        ],
+        "dtype": "float32",
+        "layout": "NHWC",
+        "normalization": "(pixel - 0.0) / 255.0 -> [0.0, 1.0]",
+        "colorOrder": "RGB",
+        "resizePolicy": "stretch to 256x256 (keep_aspect_ratio=false, no letterbox)",
+        "source": "Tensor shapes/dtype read from the .tflite flatbuffer (input 'input_1') on 2026-11-16; NormalizationOptions mean=[0.0] std=[255.0] embedded in TFLite metadata, applied by MediaPipe image_preprocessing_graph.cc as (0-mean)/std .. (255-mean)/std; model card: 'Channels order: RGB with values in [0.0, 1.0]'."
+      },
+      "outputSpec": {
+        "shape": [
+          1,
+          256,
+          256,
+          1
+        ],
+        "dtype": "float32",
+        "activation": "NONE (no post-activation applied by MediaPipe; graph output is already person confidence)",
+        "threshold": 0.5,
+        "channels": 1,
+        "channelLabels": [
+          "person"
+        ],
+        "maskSemantics": "float32 confidence in [0.0, 1.0]; MediaPipe derives the uint8 category mask as person > 0.5 -> 1 else 0 (background).",
+        "source": "Tensor shape/dtype read from the .tflite flatbuffer (output 'activation_10'); activation read from embedded SEGMENTER_METADATA custom metadata (field absent = schema default NONE); confidence range [0.0,1.0] per model card and https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter; 0.5 binary threshold per MediaPipe tensors_to_segmentation_calculator.cc."
+      },
+      "attribution": "\"MediaPipe Selfie Segmentation\" model card, Tingbo Hou, Siargey Pisarchyk, Karthik Raveendran (Google), May 6, 2021, licensed under Apache License, Version 2.0. Model distributed by Google as part of MediaPipe. Model card: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Selfie%20Segmentation.pdf",
+      "modelCardUrl": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Selfie%20Segmentation.pdf",
+      "verification": {
+        "verifiedAt": "2026-11-16",
+        "method": "downloaded from sourceUrl; SHA-256 via Get-FileHash; 'latest' alias confirmed byte-identical (same size + ETag 3b2e3e1cfc7d31538caf00ff4e0fba8c)"
+      },
+      "notes": "Model card describes this as the 249 KB general/squat model; intended for human segmentation in AR / video-conferencing. Preprocessing/resizing is automatic when using the MediaPipe ImageSegmenter API; if implementing raw TFLite, replicate inputSpec exactly."
+    },
+    {
+      "id": "mediapipe-selfie-segmenter-landscape-256x144-f16",
+      "displayName": "MediaPipe Selfie Segmenter (landscape, 256x144, float16)",
+      "description": "Landscape-input (H=144, W=256) variant of the selfie segmenter; same person/background binary mask. Optional BUNDLED extra for camera/video-call-style UI where the frame is always landscape.",
+      "licenseSpdx": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licenseEvidenceUrl": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Selfie%20Segmentation.pdf",
+      "sourceUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segmenter_landscape/float16/1/selfie_segmenter_landscape.tflite",
+      "downloadUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segmenter_landscape/float16/1/selfie_segmenter_landscape.tflite",
+      "latestAliasUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segmenter_landscape/float16/latest/selfie_segmenter_landscape.tflite",
+      "version": "1",
+      "fileName": "selfie_segmenter_landscape.tflite",
+      "assetPath": "models/selfie_segmenter_landscape.tflite",
+      "sizeBytes": 250177,
+      "sha256": "490e9ea734313e0de10fa0cd9e3c6133e36ea4db2b7a49bde9ef019f72796b8e",
+      "distribution": "BUNDLED",
+      "runtime": "tflite",
+      "artifactLastModifiedUtc": "2023-05-07T05:14:12Z",
+      "inputSpec": {
+        "shape": [
+          1,
+          144,
+          256,
+          3
+        ],
+        "dtype": "float32",
+        "layout": "NHWC",
+        "normalization": "(pixel - 0.0) / 255.0 -> [0.0, 1.0]",
+        "colorOrder": "RGB",
+        "resizePolicy": "stretch to 256x144 (keep_aspect_ratio=false, no letterbox)",
+        "source": "Tensor shapes/dtype read from the .tflite flatbuffer (input 'input_1') on 2026-11-16; NormalizationOptions mean=[0.0] std=[255.0] in embedded TFLite metadata; model card: landscape model is a 144 x 256 x 3 tensor, RGB in [0.0, 1.0]."
+      },
+      "outputSpec": {
+        "shape": [
+          1,
+          144,
+          256,
+          1
+        ],
+        "dtype": "float32",
+        "activation": "NONE (no post-activation; graph output is already person confidence)",
+        "threshold": 0.5,
+        "channels": 1,
+        "channelLabels": [
+          "person"
+        ],
+        "maskSemantics": "float32 confidence in [0.0, 1.0]; category mask = person > 0.5.",
+        "source": "Tensor shape/dtype read from the .tflite flatbuffer (output 'segment_back'); activation from embedded SEGMENTER_METADATA (absent = NONE); threshold logic per MediaPipe tensors_to_segmentation_calculator.cc."
+      },
+      "attribution": "\"MediaPipe Selfie Segmentation\" model card (landscape variant), Tingbo Hou, Siargey Pisarchyk, Karthik Raveendran (Google), May 6, 2021, licensed under Apache License, Version 2.0.",
+      "modelCardUrl": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Selfie%20Segmentation.pdf",
+      "verification": {
+        "verifiedAt": "2026-11-16",
+        "method": "downloaded from sourceUrl; SHA-256 via Get-FileHash; 'latest' alias byte-identical (ETag 880c84cde97f80aa20d1b09d09c20113)"
+      },
+      "notes": "Optional. Only one bundled segmenter is required for MVP; adding both square and landscape costs ~500 KB total."
+    },
+    {
+      "id": "mediapipe-selfie-multiclass-256-f32",
+      "displayName": "MediaPipe Selfie Multiclass 256x256 (float32)",
+      "description": "Higher-quality 6-class portrait segmentation (background, hair, body-skin, face-skin, clothes, accessories) for cleaner subject cutout and hair-aware background effects. Recommended DOWNLOAD-at-runtime upgrade over the bundled binary segmenter; same MediaPipe ImageSegmenter runtime, no extra native dependency.",
+      "licenseSpdx": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licenseEvidenceUrl": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Multiclass%20Segmentation.pdf",
+      "sourceUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_multiclass_256x256/float32/1/selfie_multiclass_256x256.tflite",
+      "downloadUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_multiclass_256x256/float32/1/selfie_multiclass_256x256.tflite",
+      "latestAliasUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_multiclass_256x256/float32/latest/selfie_multiclass_256x256.tflite",
+      "version": "1",
+      "fileName": "selfie_multiclass_256x256.tflite",
+      "assetPath": "models/selfie_multiclass_256x256.tflite",
+      "sizeBytes": 16371837,
+      "sha256": "c6748b1253a99067ef71f7e26ca71096cd449baefa8f101900ea23016507e0e0",
+      "distribution": "DOWNLOAD",
+      "runtime": "tflite",
+      "artifactLastModifiedUtc": "2023-04-26T03:33:35Z",
+      "inputSpec": {
+        "shape": [
+          1,
+          256,
+          256,
+          3
+        ],
+        "dtype": "float32",
+        "layout": "NHWC",
+        "normalization": "(pixel - 127.5) / 127.5 -> [-1.0, 1.0]",
+        "colorOrder": "RGB",
+        "resizePolicy": "stretch to 256x256 (keep_aspect_ratio=false, no letterbox); model card notes the input need not be pre-resized, portrait/landscape accepted",
+        "source": "Tensor shapes/dtype read from the .tflite flatbuffer (input 'input_29') on 2026-11-16; NormalizationOptions mean=[127.5] std=[127.5] in embedded TFLite metadata; model card: 'normalized RGB image, at resolution of [256, 256, 3]'."
+      },
+      "outputSpec": {
+        "shape": [
+          1,
+          256,
+          256,
+          6
+        ],
+        "dtype": "float32",
+        "activation": "SOFTMAX — raw TFLite output is PRE-activation logits; the app must apply softmax across the channel axis after inference (MediaPipe applies it outside the model; direct LiteRT/TFLite integration must replicate this).",
+        "threshold": null,
+        "channels": 6,
+        "channelLabels": [
+          "background",
+          "hair",
+          "body-skin",
+          "face-skin",
+          "clothes",
+          "others (accessories)"
+        ],
+        "maskSemantics": "float32 per-class confidence masks in [0.0, 1.0] (6 separate masks); category mask = argmax over the 6 channels. No single global threshold is defined by the model.",
+        "source": "Tensor shape/dtype read from the .tflite flatbuffer (output 'Identity'); activation=SOFTMAX read from embedded SEGMENTER_METADATA custom metadata; class order from https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter; confidence range per docs ('per-category floating-point confidence masks in [0.0, 1.0]')."
+      },
+      "attribution": "\"Model Card Multiclass Segmentation\", Adel Ahmadyan (Google), model date May 10, 2023, licensed under Apache License, Version 2.0. Model card: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Multiclass%20Segmentation.pdf",
+      "modelCardUrl": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Multiclass%20Segmentation.pdf",
+      "verification": {
+        "verifiedAt": "2026-11-16",
+        "method": "downloaded from sourceUrl; SHA-256 via Get-FileHash; 'latest' alias byte-identical (ETag 6ca6a40d84bcb910420a1a43a295100a)"
+      },
+      "notes": "16.37 MB download. Google's Pixel 6 benchmark: 71.24 ms GPU / 217.76 ms CPU per frame (docs page, task benchmarks). Download only over unmetered/Wi-Fi by default; verify SHA-256 after download and before use; store in app-private storage."
+    },
+    {
+      "id": "mediapipe-hair-segmenter-512-f32",
+      "displayName": "MediaPipe Hair Segmenter (512x512, float32)",
+      "description": "Optional 2-class hair/background segmentation for hair recoloring or hair-aware blur. DOWNLOAD at runtime (781,618 bytes). Uses MediaPipe's 4-channel legacy preprocessing path (RGBA input with alpha forced to 0).",
+      "licenseSpdx": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licenseEvidenceUrl": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20-%20Hair%20Segmentation.pdf",
+      "sourceUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/hair_segmenter/float32/1/hair_segmenter.tflite",
+      "downloadUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/hair_segmenter/float32/1/hair_segmenter.tflite",
+      "latestAliasUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/hair_segmenter/float32/latest/hair_segmenter.tflite",
+      "version": "1",
+      "fileName": "hair_segmenter.tflite",
+      "assetPath": "models/hair_segmenter.tflite",
+      "sizeBytes": 781618,
+      "sha256": "2628cf3ce5f695f604cbea2841e00befcaa3624bf80caf3664bef2656d59bf84",
+      "distribution": "DOWNLOAD",
+      "runtime": "tflite",
+      "artifactLastModifiedUtc": "2023-04-26T03:33:37Z",
+      "inputSpec": {
+        "shape": [
+          1,
+          512,
+          512,
+          4
+        ],
+        "dtype": "float32",
+        "layout": "NHWC",
+        "normalization": "(pixel - 0.0) / 255.0 -> [0.0, 1.0] for RGB channels; alpha channel is forced to 0 by MediaPipe",
+        "colorOrder": "RGBA (RGB used; alpha = 0)",
+        "resizePolicy": "stretch to 512x512 (keep_aspect_ratio=false, no letterbox)",
+        "source": "Tensor shape/dtype read from the .tflite flatbuffer (input 'input_1', 4 channels) on 2026-11-16; NormalizationOptions mean=[0.0] std=[255.0] in embedded TFLite metadata; MediaPipe image_segmenter_graph.cc special-cases 4-channel inputs and applies SetAlphaCalculator(alpha=0) before TensorConverterCalculator."
+      },
+      "outputSpec": {
+        "shape": [
+          1,
+          512,
+          512,
+          2
+        ],
+        "dtype": "float32",
+        "activation": "SOFTMAX — raw TFLite output is PRE-activation logits; the app must apply softmax across the channel axis after inference (MediaPipe applies it outside the model; direct LiteRT/TFLite integration must replicate this).",
+        "threshold": null,
+        "channels": 2,
+        "channelLabels": [
+          "background",
+          "hair"
+        ],
+        "maskSemantics": "float32 probabilities in [0.0, 1.0] for background and hair; category mask = argmax (0=background, 1=hair) per docs table.",
+        "source": "Tensor shape/dtype read from the .tflite flatbuffer (output 'conv2d_transpose_4'); activation=SOFTMAX from embedded SEGMENTER_METADATA; class labels from https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter."
+      },
+      "attribution": "\"Model Card Content: Hair Segmentation\" (MediaPipe Hair Segmentation), developed by researchers at Google, 2019, version 2019-01-14, licensed under Apache License, Version 2.0. Citation requested: A. Tkachenka et al., 'Real-time Hair segmentation and recoloring on Mobile GPUs', CVPR Workshop on Computer Vision for Augmented and Virtual Reality, Long Beach, CA, USA, 2019.",
+      "modelCardUrl": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20-%20Hair%20Segmentation.pdf",
+      "verification": {
+        "verifiedAt": "2026-11-16",
+        "method": "downloaded from sourceUrl; SHA-256 via Get-FileHash; 'latest' alias byte-identical (ETag 1effac57961bd80e59011dc99bd00cc1)"
+      },
+      "notes": "Optional; not required for MVP background removal. 512x512 input/output is heavier than the selfie models (Pixel 6 benchmark 52.14 ms GPU / 57.90 ms CPU). Only meaningful for single-person selfies."
+    },
+    {
+      "id": "mediapipe-deeplab-v3-257-f32",
+      "displayName": "MediaPipe DeepLab-V3 (257x257, float32)",
+      "description": "General-purpose 21-class segmentation for objects, pets, products, scenery and people. Best when the subject is not a portrait. A 2.8 MB download that complements the portrait models.",
+      "licenseSpdx": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licenseEvidenceUrl": "https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-DeepLab-V3",
+      "sourceUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/deeplab_v3/float32/1/deeplab_v3.tflite",
+      "downloadUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/deeplab_v3/float32/1/deeplab_v3.tflite",
+      "latestAliasUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/deeplab_v3/float32/latest/deeplab_v3.tflite",
+      "version": "1",
+      "fileName": "deeplab_v3.tflite",
+      "assetPath": "models/deeplab_v3.tflite",
+      "sizeBytes": 2780176,
+      "sha256": "ff36e24d40547fe9e645e2f4e8745d1876d6e38b332d39a82f0bf0f5d1d561b3",
+      "distribution": "DOWNLOAD",
+      "runtime": "tflite",
+      "artifactLastModifiedUtc": "2023-04-26T03:33:40Z",
+      "inputSpec": {
+        "shape": [
+          1,
+          257,
+          257,
+          3
+        ],
+        "dtype": "float32",
+        "layout": "NHWC",
+        "normalization": "(pixel - 127.5) / 127.5 -> [-1.0, 1.0]",
+        "colorOrder": "RGB",
+        "resizePolicy": "stretch to 257x257 (keep_aspect_ratio=false, no letterbox)",
+        "source": "Tensor shapes/dtype read from the .tflite flatbuffer (input sub_7) on 2026-11-22; graph uses only builtin ADD/AVERAGE_POOL_2D/CONCATENATION/CONV_2D/DEPTHWISE_CONV_2D/RESIZE_BILINEAR ops. Normalization mean=[127.5], std=[127.5] per the litert-community DeepLab-V3 model card / MediaPipe image-preprocessing default; not independently execution-verified."
+      },
+      "outputSpec": {
+        "shape": [
+          1,
+          257,
+          257,
+          21
+        ],
+        "dtype": "float32",
+        "activation": "SOFTMAX — raw TFLite output is PRE-activation logits; the app must apply softmax across the 21-channel axis after inference (verified: no SOFTMAX/LOGISTIC op in the 70-op graph; ai-edge-litert 2.4.0 run on random input returned logits from -3.91 to 17.98, 99.5% of values outside [0,1]).",
+        "threshold": null,
+        "channels": 21,
+        "channelLabels": [
+          "background",
+          "aeroplane",
+          "bicycle",
+          "bird",
+          "boat",
+          "bottle",
+          "bus",
+          "car",
+          "cat",
+          "chair",
+          "cow",
+          "dining table",
+          "dog",
+          "horse",
+          "motorbike",
+          "person",
+          "potted plant",
+          "sheep",
+          "sofa",
+          "train",
+          "tv"
+        ],
+        "maskSemantics": "float32 per-class logits; after softmax, alpha = 1 - P(background) = sum of the 20 foreground class probabilities. No single global threshold is defined by the model.",
+        "source": "Tensor shape/dtype read from the .tflite flatbuffer (output ResizeBilinear_3); class order extracted from labels.txt/labelmap.txt embedded in TFLITE_METADATA associated files."
+      },
+      "attribution": "MediaPipe DeepLab-V3 semantic segmentation model, distributed by Google as part of MediaPipe under Apache License, Version 2.0. Model card/mirror: https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-DeepLab-V3 ; upstream artifact: https://storage.googleapis.com/mediapipe-models/image_segmenter/deeplab_v3/float32/1/deeplab_v3.tflite ; task docs: https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter",
+      "modelCardUrl": "https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-DeepLab-V3",
+      "verification": {
+        "verifiedAt": "2026-11-22",
+        "method": "downloaded from sourceUrl; SHA-256 via Get-FileHash; HEAD on GCS /1/ and /latest/ both 200, Content-Length 2,780,176, ETag 89cbf585278bae20ce7606c07d7071dd; HF mirror LFS sha256 equals local hash; tensors read from flatbuffer; logits behavior confirmed by ai-edge-litert 2.4.0 inference."
+      },
+      "notes": "2.78 MB DOWNLOAD. Google Pixel 6 benchmark: 123.93 ms CPU / 103.30 ms GPU (MediaPipe docs task benchmarks). Optional BUNDLED variant if the 5 MB APK bundle budget allows. Model uses only standard builtin ops (no Flex/custom), so it loads on the app TFLite 2.3.2 runtime. Not a portrait matte: it returns 21-class logits, so the app alpha is the summed foreground probability (threshold null)."
+    },
+    {
+      "id": "modnet-portrait-matting-512-f32",
+      "displayName": "MODNet Portrait Matting (512x512, float32)",
+      "description": "Soft portrait alpha matting with hair and edge detail, for cleaner cut-outs than a binary mask. A 25 MB download; best for people, not general objects.",
+      "licenseSpdx": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "licenseEvidenceUrl": "https://github.com/ZHKKKe/MODNet",
+      "sourceUrl": "https://huggingface.co/litert-community/MODNet-LiteRT/resolve/4d5bd22bde15c8ae5e215ca4799513844979a431/modnet.tflite",
+      "downloadUrl": "https://huggingface.co/litert-community/MODNet-LiteRT/resolve/4d5bd22bde15c8ae5e215ca4799513844979a431/modnet.tflite",
+      "latestAliasUrl": "https://huggingface.co/litert-community/MODNet-LiteRT/resolve/main/modnet.tflite",
+      "version": "main",
+      "fileName": "modnet.tflite",
+      "assetPath": "models/modnet.tflite",
+      "sizeBytes": 26166776,
+      "sha256": "f7d1e9eca9562abddb60e4b0a3ed0c29441ef09cd621954978f1613914cc64bc",
+      "distribution": "DOWNLOAD",
+      "runtime": "tflite",
+      "inputSpec": {
+        "shape": [
+          1,
+          3,
+          512,
+          512
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "normalization": "(pixel / 255.0 - 0.5) / 0.5 -> [-1.0, 1.0]",
+        "colorOrder": "RGB",
+        "resizePolicy": "stretch to 512x512 (keep_aspect_ratio=false, no letterbox)",
+        "source": "Tensor shapes/dtype read from the .tflite flatbuffer (input serving_default_args_0) on 2026-11-22; NCHW RGB preprocessing and [0,1] soft-alpha output per the litert-community/MODNet-LiteRT model card; upstream MODNet is Apache-2.0."
+      },
+      "outputSpec": {
+        "shape": [
+          1,
+          1,
+          512,
+          512
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "activation": "NONE — graph ends with LOGISTIC; the raw output is already alpha in [0.0, 1.0].",
+        "threshold": null,
+        "channels": 1,
+        "channelLabels": [
+          "foreground"
+        ],
+        "maskSemantics": "float32 soft alpha in [0.0, 1.0] for the portrait subject; no background class is needed (single-channel matte).",
+        "source": "Tensor shape/dtype read from the .tflite flatbuffer (output serving_default_output_0_output) on 2026-11-22; graph tail includes LOGISTIC and RESHAPE, so the app must not apply another activation."
+      },
+      "attribution": "MODNet: Real-Time Trimap-Free Portrait Matting via Objective Decomposition, Zhanghan Ke, Jiayu Sun, Kaican Li, Qiong Yan, Rynson W.H. Lau (AAAI 2022), Apache License 2.0. Upstream: https://github.com/ZHKKKe/MODNet ; LiteRT conversion: https://huggingface.co/litert-community/MODNet-LiteRT",
+      "modelCardUrl": "https://huggingface.co/litert-community/MODNet-LiteRT",
+      "verification": {
+        "verifiedAt": "2026-11-22",
+        "method": "downloaded from downloadUrl; SHA-256 via Get-FileHash matches the Hugging Face LFS oid; tensor shapes/dtype read from the .tflite flatbuffer; graph tail inspected (LOGISTIC/RESHAPE). License evidence: upstream GitHub repository Apache-2.0 and the HF model card tag."
+      },
+      "notes": "26.17 MB DOWNLOAD. Upstream MODNet benchmark: about 419 ms CPU (4 threads) / 79 ms GPU per 512x512 frame; first inference also pays model-load time. This is a portrait matte, not a general object segmenter; use DeepLab-V3 for pets/products. The app's NCHW path writes RGB channel planes and reads the single-channel planar output as-is."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="midad_paper">#F4EFE5</color>
+    <!-- Matches MidadColors.NightBackground; keeps the cold-start window dark. -->
+    <color name="midad_night_background">#15120E</color>
+    <color name="ic_launcher_background">#1C1915</color>
+</resources>

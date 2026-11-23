@@ -1,0 +1,121 @@
+NOTICE
+======
+On-device AI models and runtime used by Midad Studio
+====================================================
+
+Midad Studio runs every AI model on the device. The models below are either
+bundled with the app or downloaded only when you choose to install them. This
+file credits the models and records their licence. The full Apache License 2.0
+text is provided in this directory as LICENSE-Apache-2.0.txt; that copy is the
+Apache-2.0 text as distributed in the MediaPipe repository (it includes the
+Lucent Technologies / Rob Pike-Ken Thompson appendix).
+
+BUNDLED WITH THIS BUILD
+-----------------------
+1. MediaPipe Selfie Segmentation ("SelfieSegmenter (square)")
+   File: selfie_segmenter.tflite (float16, model version 1)
+   Model card: "Model Card MediaPipe Selfie Segmentation"
+   Authors: Tingbo Hou, Siargey Pisarchyk, Karthik Raveendran (Google)
+   Date: May 6, 2021
+   Model card URL: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Selfie%20Segmentation.pdf
+   Licensed under Apache License, Version 2.0.
+
+2. MediaPipe Selfie Segmentation ("SelfieSegmenter (landscape)")
+   File: selfie_segmenter_landscape.tflite (float16, model version 1)
+   Model card: same model card as (1); landscape variant described therein.
+   Licensed under Apache License, Version 2.0.
+
+DOWNLOADED ONLY WHEN THE USER CHOOSES IT
+----------------------------------------
+3. MediaPipe Multiclass Segmentation ("SelfieMulticlass (256 x 256)")
+   File: selfie_multiclass_256x256.tflite (float32, model version 1)
+   Model card: "Model Card Multiclass Segmentation"
+   Author: Adel Ahmadyan (Google)
+   Model date: May 10, 2023
+   Model card URL: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Multiclass%20Segmentation.pdf
+   Licensed under Apache License, Version 2.0.
+
+4. MediaPipe Hair Segmentation ("HairSegmenter")
+   File: hair_segmenter.tflite (float32, model version 1)
+   Model card: "Model Card Content: Hair Segmentation"
+   Developed by researchers at Google, 2019, version 2019-01-14.
+   Model card URL: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20-%20Hair%20Segmentation.pdf
+   Licensed under Apache License, Version 2.0.
+   Citation requested by the model card:
+     A. Tkachenka et al. "Real-time Hair segmentation and recoloring on Mobile GPUs."
+     CVPR Workshop on Computer Vision for Augmented and Virtual Reality, Long Beach, CA, USA, 2019.
+
+5. MediaPipe DeepLab-V3 (257 x 257, float32)
+   File: deeplab_v3.tflite
+   Source (MediaPipe model storage):
+     https://storage.googleapis.com/mediapipe-models/image_segmenter/deeplab_v3/float32/1/deeplab_v3.tflite
+   Model card / mirror with licence metadata:
+     https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-DeepLab-V3
+   Licence: Apache License, Version 2.0 (model-card metadata: apache-2.0; the
+   model is also published by Google through Kaggle Models, whose metadata names
+   Apache 2.0). 21 PASCAL VOC classes. General object segmentation, not a
+   portrait matte.
+   Shipped file: 2,780,176 bytes, SHA-256
+   ff36e24d40547fe9e645e2f4e8745d1876d6e38b332d39a82f0bf0f5d1d561b3.
+   These bytes equal the LiteRT mirror's LFS artifact (repo commit
+   739202fd..., lastModified 2026-11-19). No MediaPipe model card exists for
+   this file; the licence is recorded from the Kaggle Models API ("Apache 2.0")
+   and the LiteRT mirror card (license: apache-2.0). The Kaggle metadata-v2
+   instance differs by 125 bytes, which Apache-2.0 permits as a modified
+   distribution.
+   Reference paper: L.-C. Chen, G. Papandreou, I. Kokkinos, K. Murphy,
+   A. L. Yuille. "DeepLab: Semantic Image Segmentation with Deep Convolutional
+   Nets, Atrous Convolution, and Fully Connected CRFs." IEEE TPAMI, 2018.
+
+6. MODNet — trimap-free portrait matting (512 x 512, float32)
+   File: modnet.tflite
+   Source (LiteRT conversion):
+     https://huggingface.co/litert-community/MODNet-LiteRT
+   Original model and weights:
+     https://github.com/ZHKKKe/MODNet
+   Authors: Zhanghan Ke, Jiayu Sun, Kaican Li, Qiong Yan, Rynson W.H. Lau.
+   Paper: "MODNet: Real-Time Trimap-Free Portrait Matting via Objective
+   Decomposition." AAAI 2022. https://arxiv.org/abs/2011.11961
+   Licence: Apache License, Version 2.0 (upstream repository LICENSE, and the
+   LiteRT model card declares apache-2.0). The LiteRT conversion is published by
+   the Hugging Face litert-community at commit
+   4d5bd22bde15c8ae5e215ca4799513844979a431 (lastModified 2026-09-08); the
+   Hugging Face repository has no separate LICENSE file, so the evidence is the
+   upstream repository LICENSE and the conversion card's license declaration.
+   The conversion is a modified derivative of the original Apache-2.0 weights:
+   litert-community re-authored two GPU-targeted patches (SE block Linear to a
+   1x1 convolution; fp16-safe hierarchical-mean InstanceNorm) and distributes
+   the result under Apache-2.0. The model name and marks remain those of the
+   original authors.
+   Soft alpha matte for portraits; not a general object segmenter.
+
+RUNTIME
+-------
+This app runs inference with LiteRT 2.3.2 (com.google.ai.edge.litert:litert),
+licensed under the Apache License, Version 2.0. Its third-party attributions are
+reproduced verbatim in LiteRT-THIRD_PARTY_NOTICE.txt in this directory, and its
+AAR license text is in LiteRT-LICENSE.txt (the Android Gradle plugin does not
+copy the AAR's root NOTICE into the APK, so the text is shipped explicitly).
+No MediaPipe Android library is bundled. Image preprocessing, resizing, softmax
+and mask compositing are implemented by Midad Studio.
+
+MediaPipe source files carry the notice: Copyright 2022 The MediaPipe Authors.
+MediaPipe repository licence: Apache License, Version 2.0
+(https://github.com/google-ai-edge/mediapipe/blob/master/LICENSE).
+
+TRADEMARKS
+----------
+"MediaPipe" and "Google" are trademarks of Google LLC. "Hugging Face" is a
+trademark of Hugging Face, Inc. "MODNet" identifies the model of its original
+authors. This NOTICE does not grant trademark rights, and the product does not
+imply endorsement by Google, Hugging Face or the MODNet authors.
+
+DOWNLOAD AND STORAGE
+--------------------
+Models 3-6 are downloaded from Google's model storage or Hugging Face only when
+you choose to install them; they are stored in the app's private storage and
+verified by SHA-256 before use.
+
+The segmentation and matting models are licensed for image and background
+effects; they must not be used for surveillance, identity recognition or
+life-critical decisions.

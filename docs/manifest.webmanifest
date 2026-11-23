@@ -1,0 +1,46 @@
+{
+  "id": "/midad-studio/",
+  "name": "Midad Studio",
+  "short_name": "Midad",
+  "description": "A private, offline Android creative studio: photo editor, collage maker, design templates, video editor and on-device AI background removal.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/midad-studio/",
+  "scope": "/midad-studio/",
+  "display": "browser",
+  "background_color": "#F4EFE5",
+  "theme_color": "#F4EFE5",
+  "categories": [
+    "photo",
+    "productivity",
+    "graphics"
+  ],
+  "icons": [
+    {
+      "src": "/midad-studio/store/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/midad-studio/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Studios",
+      "url": "/midad-studio/#studios"
+    },
+    {
+      "name": "Download",
+      "url": "/midad-studio/#download"
+    },
+    {
+      "name": "العربية",
+      "url": "/midad-studio/ar/"
+    }
+  ]
+}

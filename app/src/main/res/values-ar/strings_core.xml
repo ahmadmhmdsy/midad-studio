@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">استوديو مِداد</string>
+    <string name="app_wordmark_ar">مِداد</string>
+    <string name="app_wordmark_en">MIDAD STUDIO</string>
+
+    <string name="home_hero_title">اصنع شيئًا يستحق أن يبقى.</string>
+    <string name="home_hero_body">أربعة استوديوهات. بلا سحابة، بلا حساب، بلا علامة مائية. وسائطك لا تغادر جهازك.</string>
+    <string name="home_studios_label">الاستوديوهات</string>
+    <string name="home_recent_label">أحدث التصديرات</string>
+    <string name="home_recent_empty">ستظهر هنا التصديرات التي تحفظها أو تشاركها.</string>
+    <string name="home_offline_badge">مصمم للعمل دون اتصال</string>
+    <string name="home_version_fmt">الإصدار %1$s</string>
+
+    <string name="studio_photo_title">الصور</string>
+    <string name="studio_photo_desc">الضوء واللون والتفاصيل</string>
+    <string name="studio_video_title">الفيديو</string>
+    <string name="studio_video_desc">قصّ وإعادة ترتيب وإضافة عناوين</string>
+    <string name="studio_design_title">التصميم</string>
+    <string name="studio_design_desc">منشورات وبوسترات وكولاجات</string>
+    <string name="studio_ai_title">مختبر الذكاء</string>
+    <string name="studio_ai_desc">قصّ الخلفية دون سحابة</string>
+
+    <string name="action_back">رجوع</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="action_close">إغلاق</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_ok">حسنًا</string>
+    <string name="action_share">مشاركة</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_open">فتح</string>
+    <string name="action_see_all">عرض الكل</string>
+    <string name="action_save">حفظ</string>
+
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_appearance">المظهر</string>
+    <string name="settings_theme_system">حسب النظام</string>
+    <string name="settings_theme_light">فاتح</string>
+    <string name="settings_theme_dark">داكن</string>
+    <string name="settings_models_title">نماذج الذكاء الاصطناعي</string>
+    <string name="settings_models_desc">تنزيل نماذج الذكاء وإدارتها على الجهاز</string>
+    <string name="settings_storage_title">التخزين</string>
+    <string name="settings_storage_used_fmt">الملفات المؤقتة: %1$s</string>
+    <string name="settings_clear_cache">مسح الملفات المؤقتة</string>
+    <string name="settings_cache_cleared">تم مسح الملفات المؤقتة.</string>
+    <string name="settings_legal_title">قانوني وعن التطبيق</string>
+    <string name="settings_licenses">تراخيص المصادر المفتوحة</string>
+    <string name="settings_privacy">الخصوصية</string>
+    <string name="settings_privacy_online">اقرأ سياسة الخصوصية الكاملة</string>
+    <string name="settings_privacy_body">يعمل مِداد دون اتصال. صورك وفيديوهاتك تبقى على جهازك. تُنزَّل نماذج الذكاء فقط عندما تطلبها، ويُتحقَّق منها قبل الاستخدام. لا حسابات ولا إعلانات ولا تحليلات.</string>
+    <string name="settings_version_fmt">استوديو مِداد %1$s</string>
+
+    <string name="licenses_title">التراخيص</string>
+    <string name="licenses_models_note">نماذج الذكاء الاصطناعي مذكورة أعلاه؛ افتح أي بند لقراءة ترخيصه ونسبه.</string>
+    <string name="licenses_intro">بُني مِداد على برمجيات مفتوحة المصدر ونماذج ذكاء اصطناعي مفتوحة الترخيص. افتح أي بند لقراءة نص الترخيص والنسب.</string>
+    <string name="licenses_unavailable">تعذّر تحميل نص الترخيص.</string>
+
+    <string name="projects_title">التصديرات</string>
+    <string name="projects_empty_title">لا توجد تصديرات بعد</string>
+    <string name="projects_empty">كل ما تصدّره سيظهر هنا جاهزًا للمشاركة.</string>
+    <string name="projects_kind_photo">صورة</string>
+    <string name="projects_kind_video">فيديو</string>
+    <string name="projects_delete_title">حذف هذا العنصر؟</string>
+    <string name="projects_delete_body">سيُحذف الملف من مكتبة مِداد. الملفات التي شاركتها خارج التطبيق لا تتأثر.</string>
+
+    <!-- أسماء منطوقة لشرائح الألوان في محرّري الصور والتصميم. -->
+    <string name="color_white">أبيض</string>
+    <string name="color_black">أسود</string>
+    <string name="color_ink">أسود حِبري</string>
+    <string name="color_ink_soft">أسود ناعم</string>
+    <string name="color_paper">ورقي</string>
+    <string name="color_paper_high">ورقي فاتح</string>
+    <string name="color_saffron">زعفراني</string>
+    <string name="color_saffron_soft">زعفراني فاتح</string>
+    <string name="color_terracotta">طيني</string>
+    <string name="color_sage">أخضر مريمي</string>
+    <string name="color_indigo">نيلي</string>
+    <string name="color_sand">رملي</string>
+    <string name="color_line">رملي باهت</string>
+    <string name="color_muted">رمادي دافئ</string>
+    <string name="color_rose">وردي</string>
+    <string name="color_sky">سماوي</string>
+
+    <string name="error_generic">حدث خطأ ما. حاول مرة أخرى.</string>
+
+    <!-- Shared success dialog shown by every studio after an export. -->
+    <string name="export_result_location_gallery_fmt">تم الحفظ في %1$s.</string>
+    <string name="export_result_location_app">تم الحفظ في مساحة مِداد.</string>
+    <string name="export_result_no_thumbnail">لا تتوفر معاينة</string>
+    <string name="export_result_preview_fmt">معاينة %1$s</string>
+    <string name="export_open_no_app">لا يوجد تطبيق على هذا الجهاز يمكنه فتح هذا الملف. يمكنك مشاركته بدلًا من ذلك.</string>
+
+    <!-- Export failures. Each one names the action the user can take. -->
+    <string name="export_error_no_space">لا توجد مساحة كافية لحفظ الملف. فرّغ بعض المساحة وحاول مجددًا.</string>
+    <string name="export_error_io">تعذّرت كتابة الملف. تحقّق من مساحة التخزين وحاول مجددًا.</string>
+    <string name="export_error_encode">تعذّر ترميز الصورة. جرّب صيغة JPG أو حجمًا أصغر.</string>
+    <string name="export_error_unknown">لم يكتمل التصدير. حاول مجددًا.</string>
+
+    <string name="draft_recovered">استُعيد تعديلك غير المكتمل بعد إغلاق التطبيق.</string>
+</resources>

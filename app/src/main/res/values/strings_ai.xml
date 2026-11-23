@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AI Lab home -->
+    <string name="a_home_headline">Cutouts, without the cloud.</string>
+    <string name="a_home_body">Lift a subject out of a photo in one step. The subject stays sharp, the edges stay soft, and nothing is uploaded: the model runs on this phone.</string>
+    <string name="a_home_offline_badge">Runs on this device</string>
+    <string name="a_tools_label">Tools</string>
+    <string name="a_tool_cutout_title">Background removal</string>
+    <string name="a_tool_cutout_desc">Pick a photo and lift the subject out of it.</string>
+    <string name="a_tool_ready">Ready</string>
+    <string name="a_tool_needs_model">Needs a model</string>
+    <string name="a_tool_models_title">Model manager</string>
+    <string name="a_tool_models_desc">Install, verify and remove the on-device models.</string>
+    <plurals name="a_tool_models_ready">
+        <item quantity="one">%1$d model ready</item>
+        <item quantity="other">%1$d models ready</item>
+    </plurals>
+    <string name="a_models_label">Models</string>
+    <string name="a_models_manage">Manage models</string>
+    <string name="a_models_loading">Reading the model catalogue…</string>
+    <string name="a_models_empty_title">No models yet</string>
+    <string name="a_models_empty_body">The model catalogue could not be read, so no on-device model is available. Refresh to try again.</string>
+    <string name="a_models_missing_catalogue">This build ships no model catalogue.</string>
+    <string name="a_models_invalid_catalogue">The shipped model catalogue could not be read.</string>
+    <string name="a_licence_label">Licences and attribution</string>
+    <string name="a_licence_body">Every model is openly licensed and credited in its details. Bundled licence texts ship in the app assets. No model is used without a visible attribution.</string>
+
+    <!-- Background removal -->
+    <string name="a_cutout_title">Background removal</string>
+    <string name="a_cutout_empty_title">Choose a photo</string>
+    <string name="a_cutout_empty_body">Portraits and single subjects work best. Decoding, cut-out and saving all happen on this device.</string>
+    <string name="a_action_choose_photo">Choose a photo</string>
+    <string name="a_action_change_photo">New photo</string>
+    <string name="a_action_start_over">Start over</string>
+    <string name="a_action_retry">Try again</string>
+    <string name="a_action_open_models">Open model manager</string>
+    <string name="a_cutout_no_model_hint">Background removal needs an installed model.</string>
+    <string name="a_cutout_preview_desc">Cut-out preview</string>
+    <string name="a_backdrop_label">Backdrop</string>
+    <string name="a_backdrop_transparent">Transparent</string>
+    <string name="a_backdrop_blur">Blur</string>
+    <string name="a_backdrop_paper">Paper</string>
+    <string name="a_backdrop_ink">Ink</string>
+    <string name="a_backdrop_white">White</string>
+    <string name="a_cutout_export_note">Transparent cut-outs are saved as PNG with a real alpha channel.</string>
+    <string name="a_cutout_export_note_jpg">This backdrop is saved as a high-quality JPEG.</string>
+    <string name="a_model_label">Cut-out model</string>
+    <string name="a_model_auto">Automatic (best installed)</string>
+    <string name="a_saved_title">Saved</string>
+    <string name="a_saved_dialog_title">Cutout saved</string>
+    <string name="a_saved_dialog_body">Open it now to check the edges and backdrop, or share it anywhere.</string>
+    <string name="a_stage_working">Working…</string>
+    <string name="a_stage_opening">Opening the photo…</string>
+    <string name="a_stage_segmenting">Finding the subject…</string>
+    <string name="a_stage_compositing">Composing the preview…</string>
+    <string name="a_stage_saving">Saving…</string>
+
+    <!-- Human names for the models we ship; the manifest keeps the technical name. -->
+    <string name="a_model_selfie_title">Fast portrait cutout</string>
+    <string name="a_model_selfie_desc">The default model. Small, quick, and best for one person in a portrait photo.</string>
+    <string name="a_model_selfie_landscape_title">Fast cutout for wide photos</string>
+    <string name="a_model_selfie_landscape_desc">The same quick cutout, tuned for wide or landscape photos.</string>
+    <string name="a_model_multiclass_title">Detailed portrait cutout</string>
+    <string name="a_model_multiclass_desc">Separates hair, skin, and clothes for cleaner edges. A larger download.</string>
+    <string name="a_model_hair_title">Hair-only cutout</string>
+    <string name="a_model_hair_desc">Masks hair on its own, for recolouring or softer edges.</string>
+    <string name="a_model_deeplab_title">General objects (DeepLab)</string>
+    <string name="a_model_deeplab_desc">Recognises pets, products, furniture and vehicles as well as people. Best for photos whose subject is not a person.</string>
+    <string name="a_model_modnet_title">Soft portrait matting (MODNet)</string>
+    <string name="a_model_modnet_desc">Soft hair and edge detail for cleaner portrait cut-outs. A 25 MB download; best for people, not general objects.</string>
+
+    <!-- Model manager -->
+    <string name="a_models_title">Model manager</string>
+    <string name="a_models_intro">Models run entirely on this device. Bundled models are copied out of the app on first use and checked against their checksum; downloaded models are verified the same way and only replace the old file after they match. The network is used only when you start a download.</string>
+    <string name="a_models_download_note">Model downloads are the only time AI Lab uses the network.</string>
+    <string name="a_state_installed">Installed</string>
+    <string name="a_state_bundled">Bundled</string>
+    <string name="a_state_downloading">Downloading</string>
+    <string name="a_state_verifying">Verifying</string>
+    <string name="a_state_failed">Failed</string>
+    <string name="a_state_not_installed">Not installed</string>
+    <string name="a_action_install">Install</string>
+    <string name="a_action_try">Try</string>
+    <string name="a_action_remove">Remove</string>
+    <string name="a_action_details">Details</string>
+    <string name="a_action_license">Licence</string>
+    <string name="a_action_refresh">Refresh</string>
+    <string name="a_models_progress_fmt">%1$d%%</string>
+    <string name="a_model_size_fmt">Size: %1$s</string>
+    <string name="a_model_license_fmt">Licence: %1$s</string>
+    <string name="a_model_version_fmt">Version %1$s</string>
+    <string name="a_model_attribution_label">Attribution</string>
+    <string name="a_model_source_link">Source</string>
+    <string name="a_model_card_link">Model card</string>
+    <string name="a_model_remove_title">Remove this model?</string>
+    <string name="a_model_remove_body">The model file will be deleted from this device. You can install it again at any time.</string>
+    <string name="a_model_details_title">Model details</string>
+
+    <!-- Errors -->
+    <string name="a_error_decode">That photo could not be opened. Try a different one.</string>
+    <string name="a_error_no_model">No cut-out model is installed yet. Install a model, then try again.</string>
+    <string name="a_error_model_unreadable">The installed model file is damaged or unreadable. Remove it and install it again.</string>
+    <string name="a_error_runtime">The on-device AI runtime is not available.</string>
+    <string name="a_error_inference">The subject could not be isolated. Try a clearer photo or a different model.</string>
+    <string name="a_error_save">The image could not be saved. There may not be enough free storage.</string>
+    <string name="a_error_link">No app on this device can open this link.</string>
+    <string name="a_error_network">The download could not finish. Check the connection and try again.</string>
+    <string name="a_error_checksum">The downloaded file did not match its checksum, so it was discarded. Try again.</string>
+    <string name="a_error_storage">The model could not be written to storage. Free some space and try again.</string>
+    <string name="a_error_model_link">This model has no download link.</string>
+</resources>

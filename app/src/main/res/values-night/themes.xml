@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+      The window theme follows the system night mode so a cold start in the dark never
+      flashes paper white. MainActivity overrides the window background and the system-bar
+      icon appearance from the app's own theme choice (System / Light / Dark), because
+      Midad's theme is a setting, not only a system state.
+    -->
+    <style name="Theme.Midad" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/midad_night_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="29">false</item>
+    </style>
+</resources>

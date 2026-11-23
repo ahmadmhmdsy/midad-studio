@@ -1,0 +1,28 @@
+MODNet — LiteRT conversion — attribution notice
+=================================================
+
+Model: MODNet (trimap-free portrait matting, 512 x 512, float32).
+Original work: "MODNet: Real-Time Trimap-Free Portrait Matting via Objective
+Decomposition", Zhanghan Ke, Jiayu Sun, Kaican Li, Qiong Yan, Rynson W.H. Lau,
+AAAI 2022. Paper: https://arxiv.org/abs/2011.11961
+
+Weights and original code: https://github.com/ZHKKKe/MODNet
+  Licensed under the Apache License, Version 2.0.
+  The repository has no NOTICE file. The licence text is Apache-2.0 canonical
+  text (11,357 bytes; a copy is kept at docs/product/licenses/modnet-LICENSE.txt).
+
+LiteRT conversion: https://huggingface.co/litert-community/MODNet-LiteRT
+  Distributed by the Hugging Face litert-community with model-card metadata
+  license: apache-2.0. Converted with litert-torch (build_modnet.py) and
+  re-authored for GPU compatibility:
+    1. squeeze-excite block Linear -> 1x1 convolution;
+    2. fp16-safe hierarchical-mean InstanceNorm.
+  These modifications were made by the conversion's publisher, not by Midad
+  Studio; the app downloads the published .tflite unmodified.
+  Source file: modnet.tflite, 26,166,776 bytes,
+  SHA-256 f7d1e9eca9562abddb60e4b0a3ed0c29441ef09cd621954978f1613914cc64bc.
+
+Licence: Apache License, Version 2.0 — https://www.apache.org/licenses/LICENSE-2.0
+This file is an attribution notice, not a licence. "MODNet" identifies the
+original authors' model; no endorsement by the authors or by Hugging Face is
+implied, and no trademark rights are granted.

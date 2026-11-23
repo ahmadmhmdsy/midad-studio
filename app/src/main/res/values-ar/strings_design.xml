@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- واجهة استوديو التصميم -->
+    <string name="d_title">التصميم</string>
+    <string name="d_canvas_cd">لوحة التصميم</string>
+    <string name="d_canvas_dims_fmt">%1$d × %2$d</string>
+
+    <!-- شاشة البداية -->
+    <string name="d_start_hero_title">ابدأ على ورق.</string>
+    <string name="d_start_hero_body">اختر لوحة أو قالبًا أو كولاجًا. كل ما تصنعه يبقى على هذا الجهاز.</string>
+    <string name="d_start_canvas_label">اللوحة</string>
+    <string name="d_start_ways_label">طرق البدء</string>
+    <string name="d_start_featured_label">القوالب</string>
+    <string name="d_start_see_all">عرض كل القوالب</string>
+    <string name="d_entry_templates_title">ابدأ من قالب</string>
+    <string name="d_entry_templates_body">سبعة تصاميم أصلية. غيّر أي طبقة.</string>
+    <string name="d_entry_collage_title">كولاج</string>
+    <string name="d_entry_collage_body">من صورتين إلى تسع صور في شبكة أنيقة.</string>
+
+    <string name="d_preset_square">منشور مربع</string>
+    <string name="d_preset_story">قصة رأسية</string>
+    <string name="d_preset_landscape">أفقي</string>
+    <string name="d_preset_link">بطاقة رابط</string>
+    <string name="d_preset_a4">بوستر A4</string>
+
+    <!-- معرض القوالب -->
+    <string name="d_templates_title">القوالب</string>
+    <string name="d_templates_body">تصاميم أصلية مبنية من طبقات. افتح أحدها واجعله لك.</string>
+
+    <!-- أسماء القوالب -->
+    <string name="d_tpl_manifesto">بيان</string>
+    <string name="d_tpl_sale">بطاقة تخفيض</string>
+    <string name="d_tpl_event">بوستر أمسية</string>
+    <string name="d_tpl_recipe">بطاقة وصفة</string>
+    <string name="d_tpl_label">ملصق بسيط</string>
+    <string name="d_tpl_countdown">عدّاد قصة</string>
+    <string name="d_tpl_chapter">بطاقة عنوان</string>
+
+    <!-- نصوص القوالب -->
+    <string name="d_tpl_manifesto_eyebrow">دفاتر الاستوديو — العدد ٤</string>
+    <string name="d_tpl_manifesto_title">اصنع أقلّ،\nوقل أكثر.</string>
+    <string name="d_tpl_manifesto_body">بيان صغير للصور والرسوم والملاحظات التي نحتفظ بها.</string>
+    <string name="d_tpl_manifesto_sign">استوديو مِداد</string>
+
+    <string name="d_tpl_sale_kicker">اختيارات الصيف</string>
+    <string name="d_tpl_sale_amount">٤٠٪</string>
+    <string name="d_tpl_sale_off">خصم</string>
+    <string name="d_tpl_sale_body">هذا الأسبوع فقط، حتى نفاد المعروض.</string>
+    <string name="d_tpl_sale_code">الرمز MIDAD40</string>
+
+    <string name="d_tpl_event_kicker">أمسية من</string>
+    <string name="d_tpl_event_title">ليلة من\nالشِّعر</string>
+    <string name="d_tpl_event_date">السبت · ٨:٣٠ مساءً</string>
+    <string name="d_tpl_event_place">بيت المدى · بغداد</string>
+    <string name="d_tpl_event_note">تُفتح الأبواب قبل بدء القراءة بنصف ساعة.</string>
+    <string name="d_tpl_event_footer">استوديو مِداد · بغداد</string>
+
+    <string name="d_tpl_recipe_kicker">وصفة رقم ٧</string>
+    <string name="d_tpl_recipe_title">بسكويت\nالزعفران</string>
+    <string name="d_tpl_recipe_meta">١٢ قطعة · ٤٠ دقيقة</string>
+    <string name="d_tpl_recipe_ingredients">المكوّنات</string>
+    <string name="d_tpl_recipe_list">— ٢٠٠ غ زبدة\n— ١٠٠ غ سكر\n— رشّة زعفران\n— ٢٥٠ غ طحين</string>
+    <string name="d_tpl_recipe_step">اخفق الزبدة مع السكر، ثم أضف الطحين والزعفران، وبرّد العجين، واخبزه على حرارة ١٦٠ °م.</string>
+    <string name="d_tpl_recipe_footer">مطبخ مِداد</string>
+
+    <string name="d_tpl_label_brand">مِداد</string>
+    <string name="d_tpl_label_product">زيت زيتون\nبكر ممتاز</string>
+    <string name="d_tpl_label_size">٥٠٠ مل</string>
+    <string name="d_tpl_label_note">معصور على البارد · ضيعة واحدة</string>
+
+    <string name="d_tpl_countdown_kicker">تفتح الأبواب بعد</string>
+    <string name="d_tpl_countdown_days">٣</string>
+    <string name="d_tpl_countdown_unit">أيام</string>
+    <string name="d_tpl_countdown_title">فنّ الكتاب</string>
+    <string name="d_tpl_countdown_meta">ندوة ثلاثة أيام عن الورق والحبر والتجليد.</string>
+
+    <string name="d_tpl_chapter_kicker">الفصل الأول</string>
+    <string name="d_tpl_chapter_title">الساحل الهادئ</string>
+    <string name="d_tpl_chapter_meta">فيلم قصير · ١٢ دقيقة</string>
+
+    <!-- المحرّر -->
+    <string name="d_editor_title">اللوحة</string>
+    <string name="d_action_undo">تراجع</string>
+    <string name="d_action_redo">إعادة</string>
+    <string name="d_action_export">تصدير</string>
+    <string name="d_action_margins">الهوامش</string>
+    <string name="d_action_close_panel">إغلاق اللوحة الجانبية</string>
+
+    <string name="d_tool_text">نص</string>
+    <string name="d_tool_image">صورة</string>
+    <string name="d_tool_shape">شكل</string>
+    <string name="d_tool_background">خلفية</string>
+    <string name="d_tool_layers">طبقات</string>
+
+    <string name="d_layer_text">نص</string>
+    <string name="d_layer_image">صورة</string>
+    <string name="d_layer_shape">شكل</string>
+    <string name="d_layer_background">الخلفية</string>
+    <string name="d_layers_title">الطبقات</string>
+    <string name="d_layer_move_up">نقل لأعلى</string>
+    <string name="d_layer_move_down">نقل لأسفل</string>
+    <string name="d_layer_delete">حذف الطبقة</string>
+    <string name="d_layer_delete_title">حذف هذه الطبقة؟</string>
+    <string name="d_layer_delete_body">يمكنك التراجع عن ذلك من شريط الأدوات.</string>
+
+    <string name="d_text_edit">تحرير النص</string>
+    <string name="d_text_edit_title">تحرير النص</string>
+    <string name="d_text_edit_hint">اكتب شيئًا</string>
+    <string name="d_text_placeholder">نصّك</string>
+    <string name="d_text_font">الخط</string>
+    <string name="d_font_serif">كلاسيكي</string>
+    <string name="d_font_sans">حديث</string>
+    <string name="d_text_bold">عريض</string>
+    <string name="d_text_size">الحجم</string>
+    <string name="d_text_color">اللون</string>
+    <string name="d_text_align">المحاذاة</string>
+    <string name="d_align_start">البداية</string>
+    <string name="d_align_center">الوسط</string>
+    <string name="d_align_end">النهاية</string>
+    <string name="d_opacity">العتامة</string>
+
+    <string name="d_shape_rectangle">مستطيل</string>
+    <string name="d_shape_ellipse">بيضاوي</string>
+    <string name="d_shape_line">خط</string>
+    <string name="d_shape_star">نجمة</string>
+    <string name="d_shape_underline">خط فاصل</string>
+    <string name="d_add_shape_title">إضافة شكل</string>
+    <string name="d_shape_style">النمط</string>
+    <string name="d_shape_fill">تعبئة</string>
+    <string name="d_shape_outline">حدود</string>
+    <string name="d_stroke_width">السماكة</string>
+
+    <string name="d_image_fit">الملاءمة</string>
+    <string name="d_fit_contain">احتواء</string>
+    <string name="d_fit_cover">تعبئة</string>
+    <string name="d_fit_stretch">تمديد</string>
+    <string name="d_image_corners">الزوايا</string>
+    <string name="d_image_replace">استبدال</string>
+    <string name="d_image_loading">جارٍ تجهيز الصورة…</string>
+    <string name="d_image_error">تعذّر فتح هذه الصورة. جرّب صورة أخرى.</string>
+
+    <string name="d_bg_solid">لون واحد</string>
+    <string name="d_bg_gradient">تدرّج</string>
+    <string name="d_bg_pattern">نقش</string>
+    <string name="d_bg_transparent">شفافة</string>
+    <string name="d_bg_color">اللون</string>
+    <string name="d_bg_from">من</string>
+    <string name="d_bg_to">إلى</string>
+    <string name="d_bg_ink">حبر النقش</string>
+    <string name="d_bg_direction">الاتجاه</string>
+    <string name="d_dir_vertical">عمودي</string>
+    <string name="d_dir_horizontal">أفقي</string>
+    <string name="d_dir_diagonal">قطري</string>
+    <string name="d_pattern_dots">نقاط</string>
+    <string name="d_pattern_lines">خطوط</string>
+    <string name="d_pattern_grid">شبكة</string>
+    <string name="d_pattern_arcs">أقواس</string>
+
+    <string name="d_leave_title">مغادرة هذه اللوحة؟</string>
+    <string name="d_leave_body">سيُفقد كل ما عملته منذ آخر تصدير. صدّره أو احفظه كمشروع أولًا إن أردت الاحتفاظ به.</string>
+    <string name="d_leave_confirm">مغادرة</string>
+    <string name="d_leave_cancel">متابعة التحرير</string>
+
+    <!-- الكولاج -->
+    <string name="d_collage_title">كولاج</string>
+    <string name="d_collage_hero">اجمعها معًا.</string>
+    <string name="d_collage_body">اختر من صورتين إلى تسع صور، ثم اختر الشبكة واضبط التباعد ولون الورق.</string>
+    <string name="d_collage_pick">اختر الصور</string>
+    <string name="d_collage_change">تغيير الصور</string>
+    <string name="d_collage_selected_fmt">المحدد: %1$d</string>
+    <string name="d_collage_layout">الشبكة</string>
+    <string name="d_collage_spacing">التباعد</string>
+    <string name="d_collage_background">الورق</string>
+    <string name="d_collage_format">المقاس</string>
+    <string name="d_collage_square">مربّع</string>
+    <string name="d_collage_story">قصة</string>
+    <string name="d_collage_wide">عريض</string>
+    <string name="d_collage_loading">جارٍ تجهيز الصور…</string>
+    <string name="d_collage_need_two">اختر صورتين على الأقل.</string>
+    <string name="d_collage_error">تعذّر فتح هذه الصور. جرّب غيرها.</string>
+
+    <!-- التصدير -->
+    <string name="d_export_title">تصدير</string>
+    <string name="d_export_done_title">تم تصدير التصميم</string>
+    <string name="d_export_rendering">جارٍ التصدير بالحجم الكامل…</string>
+    <string name="d_export_saving">جارٍ الحفظ في معرضك…</string>
+    <string name="d_export_png_note">خلفية شفافة — تُحفظ بصيغة PNG.</string>
+    <string name="d_export_jpg_note">تُحفظ بصيغة JPG عالية الجودة.</string>
+    <string name="d_export_retry">حاول مرة أخرى</string>
+</resources>

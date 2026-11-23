@@ -1,0 +1,68 @@
+name: Feature request
+description: Suggest an improvement that fits Midad Studio's local-first scope
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Midad Studio is local-first by design, so please keep the current scope in mind:
+
+        - No accounts, cloud sync or server processing: media never leaves the device.
+        - Only one permission exists, INTERNET, and only for a user-initiated AI model download.
+        - No ads, analytics, telemetry or third-party tracking.
+        - 0.2.3 is a signed pre-release, not a Google Play release.
+
+        Features that need new permissions, a backend, cloud storage or generative AI are unlikely to be accepted
+        in the current scope. Check the README and the release changelog for known limits before filing.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the user need or the workflow that is currently difficult.
+      placeholder: "When I ..., I cannot ..., which means ..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the smallest change that would solve the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered (optional)
+      description: Other approaches, workarounds, or existing apps' behaviour (do not name competing products).
+    validations:
+      required: false
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the app would this change?
+      options:
+        - Photo editor
+        - Collage
+        - Design studio
+        - Video editor
+        - AI background removal
+        - Projects
+        - Export or sharing
+        - Settings or licences
+        - New studio or tool
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and the release notes for this request.
+          required: true
+        - label: This request does not require a new permission, a network service, cloud sync, ads or telemetry.
+          required: true
+        - label: This is not a security or privacy report (those go through SECURITY.md).
+          required: true

@@ -1,0 +1,47 @@
+name: Android
+
+# The release bundle is built and signed by the owner locally; CI verifies that the
+# project still builds, that the localisation and raster regression tests pass, and
+# reports lint findings. Secrets never live in this repository, so no signing gate here.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Make the wrapper executable
+        run: chmod +x gradlew
+
+      - name: Unit tests (raster cap, numerals, localisation parity, mime types)
+        run: ./gradlew testDebugUnitTest --console=plain
+
+      - name: Lint (reported, not blocking while the baseline is cleaned up)
+        continue-on-error: true
+        run: ./gradlew lintDebug --console=plain
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unit-test-reports
+          path: app/build/reports/tests/testDebugUnitTest
+          if-no-files-found: ignore

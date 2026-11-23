@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Design studio chrome -->
+    <string name="d_title">Design</string>
+    <string name="d_canvas_cd">Design canvas</string>
+    <string name="d_canvas_dims_fmt">%1$d × %2$d</string>
+
+    <!-- Start screen -->
+    <string name="d_start_hero_title">Start on paper.</string>
+    <string name="d_start_hero_body">Pick a canvas, a template or a collage. Everything you make stays on this device.</string>
+    <string name="d_start_canvas_label">Canvas</string>
+    <string name="d_start_ways_label">Ways to start</string>
+    <string name="d_start_featured_label">Templates</string>
+    <string name="d_start_see_all">See all templates</string>
+    <string name="d_entry_templates_title">Start from a template</string>
+    <string name="d_entry_templates_body">Seven original layouts. Change any layer.</string>
+    <string name="d_entry_collage_title">Collage</string>
+    <string name="d_entry_collage_body">Two to nine photos in a clean grid.</string>
+
+    <string name="d_preset_square">Square post</string>
+    <string name="d_preset_story">Story</string>
+    <string name="d_preset_landscape">Landscape</string>
+    <string name="d_preset_link">Link card</string>
+    <string name="d_preset_a4">A4 poster</string>
+
+    <!-- Template gallery -->
+    <string name="d_templates_title">Templates</string>
+    <string name="d_templates_body">Original layouts built from layers. Open one and make it yours.</string>
+
+    <!-- Template names -->
+    <string name="d_tpl_manifesto">Manifesto</string>
+    <string name="d_tpl_sale">Sale card</string>
+    <string name="d_tpl_event">Event poster</string>
+    <string name="d_tpl_recipe">Recipe card</string>
+    <string name="d_tpl_label">Minimal label</string>
+    <string name="d_tpl_countdown">Story countdown</string>
+    <string name="d_tpl_chapter">Title card</string>
+
+    <!-- Template copy -->
+    <string name="d_tpl_manifesto_eyebrow">STUDIO NOTES — N° 04</string>
+    <string name="d_tpl_manifesto_title">Make less,\nmean more.</string>
+    <string name="d_tpl_manifesto_body">A small manifesto for the photographs, drawings and notes we keep.</string>
+    <string name="d_tpl_manifesto_sign">Midad Studio</string>
+
+    <string name="d_tpl_sale_kicker">THE SUMMER EDIT</string>
+    <string name="d_tpl_sale_amount">40%</string>
+    <string name="d_tpl_sale_off">OFF</string>
+    <string name="d_tpl_sale_body">This week only, while the shelves last.</string>
+    <string name="d_tpl_sale_code">CODE MIDAD40</string>
+
+    <string name="d_tpl_event_kicker">AN EVENING OF</string>
+    <string name="d_tpl_event_title">A Night of\nPoetry</string>
+    <string name="d_tpl_event_date">Saturday · 8:30 pm</string>
+    <string name="d_tpl_event_place">Beit Al-Mada · Baghdad</string>
+    <string name="d_tpl_event_note">Doors open thirty minutes before the reading.</string>
+    <string name="d_tpl_event_footer">Midad Studio · Baghdad</string>
+
+    <string name="d_tpl_recipe_kicker">RECIPE N° 07</string>
+    <string name="d_tpl_recipe_title">Saffron\nShortbread</string>
+    <string name="d_tpl_recipe_meta">MAKES 12 · 40 MINUTES</string>
+    <string name="d_tpl_recipe_ingredients">INGREDIENTS</string>
+    <string name="d_tpl_recipe_list">— 200 g butter\n— 100 g sugar\n— a pinch of saffron\n— 250 g plain flour</string>
+    <string name="d_tpl_recipe_step">Cream the butter and sugar, fold in the flour and saffron, chill the dough, then bake at 160 °C.</string>
+    <string name="d_tpl_recipe_footer">Midad kitchen</string>
+
+    <string name="d_tpl_label_brand">MIDAD</string>
+    <string name="d_tpl_label_product">extra virgin\nolive oil</string>
+    <string name="d_tpl_label_size">500 ml</string>
+    <string name="d_tpl_label_note">Cold pressed · Single estate</string>
+
+    <string name="d_tpl_countdown_kicker">THE DOORS OPEN IN</string>
+    <string name="d_tpl_countdown_days">03</string>
+    <string name="d_tpl_countdown_unit">DAYS</string>
+    <string name="d_tpl_countdown_title">The Art of the Book</string>
+    <string name="d_tpl_countdown_meta">A three-day seminar on paper, ink and binding.</string>
+
+    <string name="d_tpl_chapter_kicker">CHAPTER ONE</string>
+    <string name="d_tpl_chapter_title">The Quiet Coast</string>
+    <string name="d_tpl_chapter_meta">A short film · 12 min</string>
+
+    <!-- Editor -->
+    <string name="d_editor_title">Canvas</string>
+    <string name="d_action_undo">Undo</string>
+    <string name="d_action_redo">Redo</string>
+    <string name="d_action_export">Export</string>
+    <string name="d_action_margins">Margins</string>
+    <string name="d_action_close_panel">Close panel</string>
+
+    <string name="d_tool_text">Text</string>
+    <string name="d_tool_image">Image</string>
+    <string name="d_tool_shape">Shape</string>
+    <string name="d_tool_background">Background</string>
+    <string name="d_tool_layers">Layers</string>
+
+    <string name="d_layer_text">Text</string>
+    <string name="d_layer_image">Image</string>
+    <string name="d_layer_shape">Shape</string>
+    <string name="d_layer_background">Background</string>
+    <string name="d_layers_title">Layers</string>
+    <string name="d_layer_move_up">Move up</string>
+    <string name="d_layer_move_down">Move down</string>
+    <string name="d_layer_delete">Delete layer</string>
+    <string name="d_layer_delete_title">Delete this layer?</string>
+    <string name="d_layer_delete_body">You can undo this from the toolbar.</string>
+
+    <string name="d_text_edit">Edit text</string>
+    <string name="d_text_edit_title">Edit text</string>
+    <string name="d_text_edit_hint">Write something</string>
+    <string name="d_text_placeholder">Your text</string>
+    <string name="d_text_font">Typeface</string>
+    <string name="d_font_serif">Classic</string>
+    <string name="d_font_sans">Modern</string>
+    <string name="d_text_bold">Bold</string>
+    <string name="d_text_size">Size</string>
+    <string name="d_text_color">Colour</string>
+    <string name="d_text_align">Alignment</string>
+    <string name="d_align_start">Start</string>
+    <string name="d_align_center">Centre</string>
+    <string name="d_align_end">End</string>
+    <string name="d_opacity">Opacity</string>
+
+    <string name="d_shape_rectangle">Rectangle</string>
+    <string name="d_shape_ellipse">Ellipse</string>
+    <string name="d_shape_line">Line</string>
+    <string name="d_shape_star">Star</string>
+    <string name="d_shape_underline">Rule</string>
+    <string name="d_add_shape_title">Add a shape</string>
+    <string name="d_shape_style">Style</string>
+    <string name="d_shape_fill">Fill</string>
+    <string name="d_shape_outline">Outline</string>
+    <string name="d_stroke_width">Thickness</string>
+
+    <string name="d_image_fit">Fit</string>
+    <string name="d_fit_contain">Contain</string>
+    <string name="d_fit_cover">Fill</string>
+    <string name="d_fit_stretch">Stretch</string>
+    <string name="d_image_corners">Corners</string>
+    <string name="d_image_replace">Replace</string>
+    <string name="d_image_loading">Preparing the image…</string>
+    <string name="d_image_error">That image could not be opened. Try a different one.</string>
+
+    <string name="d_bg_solid">Solid</string>
+    <string name="d_bg_gradient">Gradient</string>
+    <string name="d_bg_pattern">Pattern</string>
+    <string name="d_bg_transparent">Transparent</string>
+    <string name="d_bg_color">Colour</string>
+    <string name="d_bg_from">From</string>
+    <string name="d_bg_to">To</string>
+    <string name="d_bg_ink">Pattern ink</string>
+    <string name="d_bg_direction">Direction</string>
+    <string name="d_dir_vertical">Vertical</string>
+    <string name="d_dir_horizontal">Horizontal</string>
+    <string name="d_dir_diagonal">Diagonal</string>
+    <string name="d_pattern_dots">Dots</string>
+    <string name="d_pattern_lines">Lines</string>
+    <string name="d_pattern_grid">Grid</string>
+    <string name="d_pattern_arcs">Arcs</string>
+
+    <string name="d_leave_title">Leave this canvas?</string>
+    <string name="d_leave_body">Everything since the last export will be lost. Export it or save it as a project first if you want to keep it.</string>
+    <string name="d_leave_confirm">Leave</string>
+    <string name="d_leave_cancel">Keep editing</string>
+
+    <!-- Collage -->
+    <string name="d_collage_title">Collage</string>
+    <string name="d_collage_hero">Put them together.</string>
+    <string name="d_collage_body">Pick two to nine photos, choose a grid, then set the spacing and the paper colour.</string>
+    <string name="d_collage_pick">Choose photos</string>
+    <string name="d_collage_change">Change photos</string>
+    <string name="d_collage_selected_fmt">Selected: %1$d</string>
+    <string name="d_collage_layout">Layout</string>
+    <string name="d_collage_spacing">Spacing</string>
+    <string name="d_collage_background">Paper</string>
+    <string name="d_collage_format">Format</string>
+    <string name="d_collage_square">Square</string>
+    <string name="d_collage_story">Story</string>
+    <string name="d_collage_wide">Wide</string>
+    <string name="d_collage_loading">Preparing photos…</string>
+    <string name="d_collage_need_two">Pick at least two photos.</string>
+    <string name="d_collage_error">Those photos could not be opened. Try different ones.</string>
+
+    <!-- Export -->
+    <string name="d_export_title">Export</string>
+    <string name="d_export_done_title">Design exported</string>
+    <string name="d_export_rendering">Rendering at full size…</string>
+    <string name="d_export_saving">Saving to your gallery…</string>
+    <string name="d_export_png_note">Transparent background — saved as PNG.</string>
+    <string name="d_export_jpg_note">Saved as a high-quality JPG.</string>
+    <string name="d_export_retry">Try again</string>
+</resources>

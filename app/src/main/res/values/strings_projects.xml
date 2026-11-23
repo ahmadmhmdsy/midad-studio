@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Projects library: saved projects shared by the photo, design, cut-out and video studios. -->
+<resources>
+    <string name="projects_library_title">Projects</string>
+    <string name="projects_new_action">New project</string>
+    <string name="projects_new_title">Start a project</string>
+    <string name="projects_new_body">Choose a studio. Everything stays on this device and reopens where you left it.</string>
+    <string name="projects_library_empty_title">No projects yet</string>
+    <string name="projects_library_empty_body">Save a photo edit, a design, a cut-out or a video as a project to reopen it later.</string>
+
+    <string name="projects_label_photo">Photo</string>
+    <string name="projects_label_design">Design</string>
+    <string name="projects_label_ai">Cut-out</string>
+    <string name="projects_label_video">Video</string>
+    <string name="projects_choose_photo">Photo editor</string>
+    <string name="projects_choose_design">Design studio</string>
+    <string name="projects_choose_ai">Cut-out studio</string>
+    <string name="projects_choose_video">Video studio</string>
+
+    <string name="projects_save_action">Save project</string>
+    <string name="projects_save_tool">Project</string>
+    <string name="projects_save_dialog_title">Name this project</string>
+    <string name="projects_save_dialog_body">The name appears in Projects so you can find the edit again.</string>
+    <string name="projects_save_dialog_confirm">Save</string>
+    <string name="projects_saved">Project saved.</string>
+    <string name="projects_save_failed">Could not save the project.</string>
+    <string name="projects_default_title_photo">Photo project</string>
+    <string name="projects_default_title_design">Design project</string>
+    <string name="projects_default_title_ai">Cut-out project</string>
+    <string name="projects_default_title_video">Video project</string>
+
+    <string name="projects_updated_fmt">Updated %1$s</string>
+    <string name="projects_open_action">Open</string>
+    <string name="projects_open_failed">This project could not be opened. It may be damaged.</string>
+    <string name="projects_rename_action">Rename</string>
+    <string name="projects_rename_title">Rename project</string>
+    <string name="projects_rename_confirm">Done</string>
+    <string name="projects_delete_project_title">Delete this project?</string>
+    <string name="projects_delete_project_body">The project and its thumbnail are removed from this device. Exported files stay where they are.</string>
+
+    <string name="projects_video_cap_notice">A project holds up to 3 minutes of video; the extra footage was trimmed.</string>
+    <string name="projects_draft_warning_title">An unfinished edit is waiting</string>
+    <string name="projects_draft_warning_body">Opening a saved project replaces the edit that was not finished. Save that edit as a project first if you want to keep it.</string>
+    <string name="projects_draft_warning_open">Open anyway</string>
+    <string name="home_projects_body">Reopen a saved edit or start a new project.</string>
+    <string name="projects_more_actions">Project options</string>
+</resources>

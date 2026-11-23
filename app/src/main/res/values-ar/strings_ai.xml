@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AI Lab home -->
+    <string name="a_home_headline">قصّ الخلفية، دون سحابة.</string>
+    <string name="a_home_body">أخرج الهدف من الصورة بخطوة واحدة. يبقى الهدف حادًّا والحواف ناعمة، ولا يُرفع أي شيء: يعمل النموذج على هذا الهاتف.</string>
+    <string name="a_home_offline_badge">يعمل على هذا الجهاز</string>
+    <string name="a_tools_label">الأدوات</string>
+    <string name="a_tool_cutout_title">إزالة الخلفية</string>
+    <string name="a_tool_cutout_desc">اختر صورة واستخرج منها الهدف.</string>
+    <string name="a_tool_ready">جاهز</string>
+    <string name="a_tool_needs_model">يحتاج نموذجًا</string>
+    <string name="a_tool_models_title">إدارة النماذج</string>
+    <string name="a_tool_models_desc">ثبّت النماذج على الجهاز وتحقق منها وأزلها.</string>
+    <plurals name="a_tool_models_ready">
+        <item quantity="zero">لا نماذج جاهزة</item>
+        <item quantity="one">نموذج واحد جاهز</item>
+        <item quantity="two">نموذجان جاهزان</item>
+        <item quantity="few">%1$d نماذج جاهزة</item>
+        <item quantity="many">%1$d نموذجًا جاهزًا</item>
+        <item quantity="other">%1$d نموذج جاهز</item>
+    </plurals>
+    <string name="a_models_label">النماذج</string>
+    <string name="a_models_manage">إدارة النماذج</string>
+    <string name="a_models_loading">يُقرأ دليل النماذج…</string>
+    <string name="a_models_empty_title">لا توجد نماذج بعد</string>
+    <string name="a_models_empty_body">تعذّرت قراءة دليل النماذج، لذا لا يتوفر نموذج على الجهاز. حدّث القائمة للمحاولة مجددًا.</string>
+    <string name="a_models_missing_catalogue">هذا الإصدار لا يتضمن دليل نماذج.</string>
+    <string name="a_models_invalid_catalogue">تعذّرت قراءة دليل النماذج المضمّن.</string>
+    <string name="a_licence_label">التراخيص والإسناد</string>
+    <string name="a_licence_body">كل نموذج مفتوح الترخيص ويُذكر إسناده في تفاصيله، وتأتي نصوص التراخيص المضمّنة مع التطبيق. ولا يُستخدم أي نموذج دون إسناد ظاهر.</string>
+
+    <!-- Background removal -->
+    <string name="a_cutout_title">إزالة الخلفية</string>
+    <string name="a_cutout_empty_title">اختر صورة</string>
+    <string name="a_cutout_empty_body">الصور الشخصية والهدف الواحد تعطي أفضل نتيجة. ويجري فك الترميز والقصّ والحفظ على هذا الجهاز.</string>
+    <string name="a_action_choose_photo">اختر صورة</string>
+    <string name="a_action_change_photo">صورة جديدة</string>
+    <string name="a_action_start_over">البدء من جديد</string>
+    <string name="a_action_retry">إعادة المحاولة</string>
+    <string name="a_action_open_models">فتح إدارة النماذج</string>
+    <string name="a_cutout_no_model_hint">تحتاج إزالة الخلفية إلى نموذج مثبَّت.</string>
+    <string name="a_cutout_preview_desc">معاينة القصّ</string>
+    <string name="a_backdrop_label">الخلفية</string>
+    <string name="a_backdrop_transparent">شفافة</string>
+    <string name="a_backdrop_blur">ضبابية</string>
+    <string name="a_backdrop_paper">ورقية</string>
+    <string name="a_backdrop_ink">حِبرية</string>
+    <string name="a_backdrop_white">بيضاء</string>
+    <string name="a_cutout_export_note">تُحفظ الخلفية الشفافة بصيغة PNG بقناة شفافية حقيقية.</string>
+    <string name="a_cutout_export_note_jpg">تُحفظ هذه الخلفية بجودة JPEG عالية.</string>
+    <string name="a_model_label">نموذج القصّ</string>
+    <string name="a_model_auto">تلقائي (الأفضل المثبَّت)</string>
+    <string name="a_saved_title">تم الحفظ</string>
+    <string name="a_saved_dialog_title">تم حفظ القصّ</string>
+    <string name="a_saved_dialog_body">افتحه الآن للتحقق من الحواف والخلفية، أو شاركه في أي مكان.</string>
+    <string name="a_stage_working">جارٍ العمل…</string>
+    <string name="a_stage_opening">جارٍ فتح الصورة…</string>
+    <string name="a_stage_segmenting">جارٍ تحديد الهدف…</string>
+    <string name="a_stage_compositing">جارٍ تركيب المعاينة…</string>
+    <string name="a_stage_saving">جارٍ الحفظ…</string>
+
+    <!-- Human names for the models we ship; the manifest keeps the technical name. -->
+    <string name="a_model_selfie_title">قصّ سريع للأشخاص</string>
+    <string name="a_model_selfie_desc">النموذج الافتراضي. صغير وسريع والأنسب لشخص واحد في صورة شخصية.</string>
+    <string name="a_model_selfie_landscape_title">قصّ سريع للصور العريضة</string>
+    <string name="a_model_selfie_landscape_desc">القصّ السريع نفسه، مهيّأ للصور العريضة أو الأفقية.</string>
+    <string name="a_model_multiclass_title">قصّ دقيق للأشخاص</string>
+    <string name="a_model_multiclass_desc">يفصل الشعر والبشرة والملابس لحوافّ أنظف. تنزيل أكبر.</string>
+    <string name="a_model_hair_title">قصّ الشعر فقط</string>
+    <string name="a_model_hair_desc">يعزل الشعر وحده لإعادة تلوينه أو تنعيم الحواف.</string>
+    <string name="a_model_deeplab_title">أجسام عامة (DeepLab)</string>
+    <string name="a_model_deeplab_desc">يتعرّف على الحيوانات والمنتجات والأثاث والمركبات إضافة إلى الأشخاص. الأنسب للصور التي لا يكون موضوعها شخصًا.</string>
+    <string name="a_model_modnet_title">قصّ بورتريه ناعم (MODNet)</string>
+    <string name="a_model_modnet_desc">تفاصيل شعر وحوافّ ناعمة لقصّ بورتريه أنظف. تنزيل بحجم ٢٥ ميجابايت؛ الأنسب للأشخاص لا للأجسام العامة.</string>
+
+    <!-- Model manager -->
+    <string name="a_models_title">إدارة النماذج</string>
+    <string name="a_models_intro">تعمل النماذج على هذا الجهاز بالكامل. تُنسخ النماذج المضمّنة من التطبيق عند أول استخدام ويُتحقَّق منها، وكذلك النماذج المنزَّلة: لا يحل النموذج الجديد محل القديم إلا بعد مطابقة بصمته. ولا يُستخدم الاتصال إلا عند بدء تنزيل.</string>
+    <string name="a_models_download_note">تنزيل النماذج هو الاستخدام الوحيد للشبكة في مختبر الذكاء.</string>
+    <string name="a_state_installed">مثبَّت</string>
+    <string name="a_state_bundled">مضمَّن</string>
+    <string name="a_state_downloading">قيد التنزيل</string>
+    <string name="a_state_verifying">قيد التحقق</string>
+    <string name="a_state_failed">فشل</string>
+    <string name="a_state_not_installed">غير مثبَّت</string>
+    <string name="a_action_install">تثبيت</string>
+    <string name="a_action_try">تجربة</string>
+    <string name="a_action_remove">إزالة</string>
+    <string name="a_action_details">التفاصيل</string>
+    <string name="a_action_license">الترخيص</string>
+    <string name="a_action_refresh">تحديث</string>
+    <string name="a_models_progress_fmt">%1$d٪</string>
+    <string name="a_model_size_fmt">الحجم: %1$s</string>
+    <string name="a_model_license_fmt">الترخيص: %1$s</string>
+    <string name="a_model_version_fmt">الإصدار %1$s</string>
+    <string name="a_model_attribution_label">الإسناد</string>
+    <string name="a_model_source_link">المصدر</string>
+    <string name="a_model_card_link">بطاقة النموذج</string>
+    <string name="a_model_remove_title">إزالة هذا النموذج؟</string>
+    <string name="a_model_remove_body">سيُحذف ملف النموذج من هذا الجهاز، ويمكنك تثبيته مجددًا في أي وقت.</string>
+    <string name="a_model_details_title">تفاصيل النموذج</string>
+
+    <!-- Errors -->
+    <string name="a_error_decode">تعذّر فتح هذه الصورة. جرّب صورة أخرى.</string>
+    <string name="a_error_no_model">لا يوجد نموذج قصّ مثبَّت بعد. ثبّت نموذجًا ثم حاول مجددًا.</string>
+    <string name="a_error_model_unreadable">ملف النموذج المثبَّت تالف أو غير قابل للقراءة. أزله وثبّته مجددًا.</string>
+    <string name="a_error_runtime">محرّك الذكاء الاصطناعي على الجهاز غير متاح.</string>
+    <string name="a_error_inference">تعذّر عزل الهدف. جرّب صورة أوضح أو نموذجًا آخر.</string>
+    <string name="a_error_save">تعذّر حفظ الصورة. قد لا توجد مساحة كافية.</string>
+    <string name="a_error_link">لا يوجد تطبيق على هذا الجهاز يمكنه فتح هذا الرابط.</string>
+    <string name="a_error_network">تعذّر إكمال التنزيل. تحقق من الاتصال وحاول مجددًا.</string>
+    <string name="a_error_checksum">لم يطابق الملف المنزَّل بصمته، لذا حُذف. حاول مجددًا.</string>
+    <string name="a_error_storage">تعذّرت كتابة النموذج في التخزين. حرّر بعض المساحة وحاول مجددًا.</string>
+    <string name="a_error_model_link">هذا النموذج ليس له رابط تنزيل.</string>
+</resources>

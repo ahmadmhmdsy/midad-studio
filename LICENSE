@@ -1,0 +1,54 @@
+Midad Studio — Source-Available Notice and License
+Copyright (c) 2026 Ahmad Mahmoud. All rights reserved.
+
+This repository is published publicly for transparency, reference, review and evaluation.
+No license or permission is granted to use, copy, modify, merge, publish, distribute,
+sublicense or sell the software or any part of it, except as stated below or as required by
+applicable law. Viewing and forking this repository on GitHub remain subject to GitHub's
+Terms of Service.
+
+Permission granted
+------------------
+1. You may read, study and evaluate the source code and documentation.
+2. You may build the application for personal, non-commercial evaluation and testing.
+3. You may quote short excerpts with clear attribution for commentary, review, teaching or
+   research.
+4. You may submit issues and pull requests under the repository's contribution guidelines.
+
+Restrictions
+------------
+1. You may not redistribute, publish or make available the application or any build of it,
+   in whole or in part, including on any app store, website, file host or package registry.
+2. You may not publish the source code or any derivative work, including under a different
+   name, except for a fork kept private or used only for the permitted evaluation above.
+3. You may not use the project name, icon, screenshots or other brand assets in a way that
+   suggests endorsement, affiliation or an official release.
+4. You may not remove or alter copyright, license or attribution notices.
+5. You may not use the project to train or benchmark models for commercial purposes.
+
+Third-party components
+----------------------
+The application bundles or depends on third-party software and machine-learning models
+(AndroidX, Kotlin, Jetpack Compose, Media3, LiteRT / TensorFlow Lite, MediaPipe models,
+DeepLab-V3, MODNet and others). Those components remain under their own licenses, several of
+them Apache License 2.0. Their notices and license texts are reproduced in
+THIRD_PARTY_NOTICES.md, docs/product/licenses/, app/src/main/assets/models/ and in-app under
+Settings -> Licenses. Nothing in this notice restricts rights granted by those licenses for
+those components.
+
+Trademarks
+----------
+No trademark rights are granted. "Midad Studio" and "استوديو مِداد" are used as a working
+project title; trademark clearance has not been completed.
+
+No warranty
+-----------
+THE SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
+
+Contact
+-------
+Licensing and permission requests: open an issue at
+https://github.com/ahmadmhmdsy/midad-studio/issues

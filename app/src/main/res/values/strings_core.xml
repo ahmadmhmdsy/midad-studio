@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Midad Studio</string>
+    <string name="app_wordmark_ar">مِداد</string>
+    <string name="app_wordmark_en">MIDAD STUDIO</string>
+
+    <string name="home_hero_title">Make something worth keeping.</string>
+    <string name="home_hero_body">Four studios. No cloud, no account, no watermark. Your media never leaves this device.</string>
+    <string name="home_studios_label">Studios</string>
+    <string name="home_recent_label">Recent exports</string>
+    <string name="home_recent_empty">Exports you share or save will appear here.</string>
+    <string name="home_offline_badge">Offline by design</string>
+    <string name="home_version_fmt">Version %1$s</string>
+
+    <string name="studio_photo_title">Photo</string>
+    <string name="studio_photo_desc">Light, colour and detail</string>
+    <string name="studio_video_title">Video</string>
+    <string name="studio_video_desc">Trim, reorder and caption</string>
+    <string name="studio_design_title">Design</string>
+    <string name="studio_design_desc">Posts, posters and collages</string>
+    <string name="studio_ai_title">AI Lab</string>
+    <string name="studio_ai_desc">Cutouts without the cloud</string>
+
+    <string name="action_back">Back</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_close">Close</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_share">Share</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_open">Open</string>
+    <string name="action_see_all">See all</string>
+    <string name="action_save">Save</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_models_title">AI models</string>
+    <string name="settings_models_desc">Download, verify and manage on-device models</string>
+    <string name="settings_storage_title">Storage</string>
+    <string name="settings_storage_used_fmt">Temporary files: %1$s</string>
+    <string name="settings_clear_cache">Clear temporary files</string>
+    <string name="settings_cache_cleared">Temporary files cleared.</string>
+    <string name="settings_legal_title">Legal and about</string>
+    <string name="settings_licenses">Open-source licences</string>
+    <string name="settings_privacy">Privacy</string>
+    <!-- Empty until the owner hosts docs/privacy/index.html; the in-app link only appears when set. -->
+    <string name="settings_privacy_url" translatable="false"></string>
+    <string name="settings_privacy_online">Read the full privacy policy</string>
+    <string name="settings_privacy_body">Midad runs offline. Your photos and videos stay on this device. AI models are downloaded only when you ask for them and are checked before use. There are no accounts, no ads and no analytics.</string>
+    <string name="settings_version_fmt">Midad Studio %1$s</string>
+
+    <string name="licenses_title">Licences</string>
+    <string name="licenses_models_note">AI models are listed above; open an entry to read its licence and attribution.</string>
+    <string name="licenses_intro">Midad is built on open-source software and openly licensed AI models. Open an entry to read its licence text and attribution.</string>
+    <string name="licenses_unavailable">The licence text could not be loaded.</string>
+
+    <string name="projects_title">Exports</string>
+    <string name="projects_empty_title">No exports yet</string>
+    <string name="projects_empty">What you export from a studio appears here, ready to share.</string>
+    <string name="projects_kind_photo">Photo</string>
+    <string name="projects_kind_video">Video</string>
+    <string name="projects_delete_title">Delete this item?</string>
+    <string name="projects_delete_body">The file will be removed from the Midad library. Files already shared outside the app are not affected.</string>
+
+    <!-- Spoken names for the colour swatches in the photo and design editors. -->
+    <string name="color_white">White</string>
+    <string name="color_black">Black</string>
+    <string name="color_ink">Ink black</string>
+    <string name="color_ink_soft">Soft black</string>
+    <string name="color_paper">Paper</string>
+    <string name="color_paper_high">Light paper</string>
+    <string name="color_saffron">Saffron</string>
+    <string name="color_saffron_soft">Light saffron</string>
+    <string name="color_terracotta">Terracotta</string>
+    <string name="color_sage">Sage</string>
+    <string name="color_indigo">Indigo</string>
+    <string name="color_sand">Sand</string>
+    <string name="color_line">Faint sand</string>
+    <string name="color_muted">Warm grey</string>
+    <string name="color_rose">Rose</string>
+    <string name="color_sky">Sky</string>
+
+    <string name="error_generic">Something went wrong. Please try again.</string>
+
+    <!-- Shared success dialog shown by every studio after an export. -->
+    <string name="export_result_location_gallery_fmt">Saved in %1$s.</string>
+    <string name="export_result_location_app">Saved in Midad storage.</string>
+    <string name="export_result_no_thumbnail">No preview available</string>
+    <string name="export_result_preview_fmt">Preview of %1$s</string>
+    <string name="export_open_no_app">No app on this device can open this file. You can still share it.</string>
+
+    <!-- Export failures. Each one names the action the user can take. -->
+    <string name="export_error_no_space">Not enough free space to save this file. Free up some storage and try again.</string>
+    <string name="export_error_io">The file could not be written. Check your storage and try again.</string>
+    <string name="export_error_encode">This image could not be encoded. Try JPG or a smaller size.</string>
+    <string name="export_error_unknown">The export did not finish. Try again.</string>
+
+    <string name="draft_recovered">Your unfinished edit was restored after the app closed.</string>
+</resources>

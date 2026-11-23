@@ -1,0 +1,66 @@
+NOTICE
+======
+MediaPipe Image Segmenter models bundled/downloaded by Midad Studio
+====================================================================
+
+This product includes the following machine-learning models, distributed by
+Google as part of the MediaPipe project (https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter).
+Each model card states "Licensed under Apache License, Version 2.0".
+The full license text is provided in the sibling <id>-LICENSE.txt files.
+(Docs copy, kept for the per-model record. The app's current NOTICE is
+app/src/main/assets/models/NOTICE.txt, updated 2026-11-22; it covers all six
+models — including DeepLab-V3 and MODNet — plus LiteRT 2.3.2.)
+
+1. MediaPipe Selfie Segmentation ("SelfieSegmenter (square)")
+   File: selfie_segmenter.tflite (float16, model version 1)
+   Model card: "Model Card MediaPipe Selfie Segmentation"
+   Authors: Tingbo Hou, Google; Siargey Pisarchyk, Google; Karthik Raveendran, Google
+   Date: May 6, 2021
+   Model card URL: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Selfie%20Segmentation.pdf
+   Licensed under Apache License, Version 2.0.
+
+2. MediaPipe Selfie Segmentation ("SelfieSegmenter (landscape)")
+   File: selfie_segmenter_landscape.tflite (float16, model version 1)
+   Model card: same model card as (1); landscape variant described therein.
+   Licensed under Apache License, Version 2.0.
+
+3. MediaPipe Multiclass Segmentation ("SelfieMulticlass (256 x 256)")
+   File: selfie_multiclass_256x256.tflite (float32, model version 1)
+   Model card: "Model Card Multiclass Segmentation"
+   Author: Adel Ahmadyan, Google
+   Model date: May 10, 2023
+   Model card URL: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Multiclass%20Segmentation.pdf
+   Licensed under Apache License, Version 2.0.
+
+4. MediaPipe Hair Segmentation ("HairSegmenter")
+   File: hair_segmenter.tflite (float32, model version 1)
+   Model card: "Model Card Content: Hair Segmentation"
+   Developed by researchers at Google, 2019, version 2019-01-14.
+   Model card URL: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20-%20Hair%20Segmentation.pdf
+   Licensed under Apache License, Version 2.0.
+   Citation requested by the model card:
+     A. Tkachenka et al. "Real-time Hair segmentation and recoloring on Mobile GPUs."
+     CVPR Workshop on Computer Vision for Augmented and Virtual Reality,
+     Long Beach, CA, USA, 2019.
+
+MediaPipe copyright notice: Copyright 2022 The MediaPipe Authors.
+MediaPipe repository license: Apache License, Version 2.0
+(https://github.com/google-ai-edge/mediapipe/blob/master/LICENSE).
+
+Runtime libraries (not models)
+------------------------------
+- com.google.ai.edge.litert:litert 2.3.2 (LiteRT, formerly TensorFlow Lite) is
+  licensed under Apache License, Version 2.0 (Maven POM). Its AAR ships
+  LICENSE (13,575 B) and THIRD_PARTY_NOTICE.txt (1,960,672 B, 35,719 lines) at
+  the AAR ROOT — not as META-INF/NOTICE — and the Android Gradle plugin does
+  not copy AAR root files into the APK/AAB. An app that embeds LiteRT must
+  therefore ship or reproduce those attributions explicitly; recorded
+  2026-11-22 after inspecting the 2.3.2 AAR and the 0.2.3 release artifact.
+- com.google.mediapipe:tasks-vision:1.2.3 (Android AAR) is NOT a dependency of
+  0.2.3 (the app uses LiteRT only). If a future build adds it, its AAR
+  META-INF/NOTICE (3.28 MB of third-party attributions) must be surfaced.
+- com.microsoft.onnxruntime:onnxruntime-android (if adopted later) is
+  licensed under the MIT License.
+
+Note: "MediaPipe" and "Google" are trademarks of Google LLC. This NOTICE does
+not grant trademark rights; the product must not imply endorsement by Google.

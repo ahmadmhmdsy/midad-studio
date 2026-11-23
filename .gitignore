@@ -1,0 +1,32 @@
+# Gradle
+.gradle/
+build/
+app/build/
+.kotlin/
+
+# Local machine config
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Local build scratch and session handoffs
+tmp/
+.dsh/
+
+# Signing material
+*.jks
+*.keystore
+keystore.properties
+
+# Release artifacts are published as GitHub Release assets, not committed
+*.apk
+*.aab
+*.apks
+mapping.txt
+
+# Local scratch and tool state
+/undefined/
+.impeccable/

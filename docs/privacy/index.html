@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Privacy policy — Midad Studio</title>
+<meta name="description" content="Privacy policy for Midad Studio, an offline-first Android photo, video, collage and AI studio. No account, no ads, no analytics, no uploads.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#F4EFE5">
+<link rel="canonical" href="https://ahmadmhmdsy.github.io/midad-studio/privacy/">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Midad Studio">
+<meta property="og:title" content="Privacy policy — Midad Studio">
+<meta property="og:description" content="How Midad Studio handles your data: on-device editing, one optional network request, no account, no ads, no analytics and no uploads.">
+<meta property="og:url" content="https://ahmadmhmdsy.github.io/midad-studio/privacy/">
+<meta property="og:image" content="https://ahmadmhmdsy.github.io/midad-studio/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Midad Studio icon beside the headline: Four studios. One private app. Nothing leaves your phone.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_IQ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy policy — Midad Studio">
+<meta name="twitter:description" content="On-device editing, one optional network request, no account, no ads and no analytics — the Midad Studio privacy policy.">
+<meta name="twitter:image" content="https://ahmadmhmdsy.github.io/midad-studio/og-image.png">
+<meta name="twitter:image:alt" content="Midad Studio icon beside the headline: Four studios. One private app. Nothing leaves your phone.">
+<style>
+  :root{
+    --paper:#F4EFE5;
+    --raised:#FBF8F1;
+    --ink:#1C1915;
+    --ink-soft:#3F3A32;
+    --ink-faint:#5C554B;
+    --rule:#CFC5B4;
+    --accent:#8C4A32;
+    --accent-strong:#6E3524;
+    --wash:#EFE0C6;
+    --measure:48rem;
+    --radius:4px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:1.0625rem;line-height:1.65;
+  }
+  a{color:var(--accent);text-underline-offset:.18em;text-decoration-thickness:1px}
+  a:hover{color:var(--accent-strong)}
+  a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+  .skip{position:absolute;inset-inline-start:-9999px;top:0;background:var(--ink);color:var(--paper);padding:.75rem 1rem;z-index:10}
+  .skip:focus{inset-inline-start:.5rem;top:.5rem}
+  .wrap{max-width:var(--measure);margin:0 auto;padding-inline:clamp(1rem,4vw,2rem);padding-block:clamp(1.5rem,4vw,2.75rem)}
+  header.masthead{border-block-end:1px solid var(--rule);padding-block-end:clamp(1rem,3vw,1.75rem);margin-block-end:1.25rem}
+  a.brand{text-decoration:none;color:inherit}
+  a.brand:hover .wordmark{color:var(--accent-strong)}
+  a.brand{text-decoration:none;color:inherit}
+  a.brand:hover .wordmark{color:var(--accent-strong)}
+  .brand{display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .875rem;margin:0 0 .75rem}
+  .brand .wordmark{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.5rem,4.5vw,2rem);font-weight:600;letter-spacing:.01em;margin:0}
+  .brand .arabic{font-size:clamp(1.125rem,3.5vw,1.375rem);color:var(--ink-faint)}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.5rem,4.4vw,2.125rem);line-height:1.25;margin:.25rem 0 .5rem;font-weight:600}
+  .meta{margin:0;color:var(--ink-faint);font-size:.9375rem}
+  .meta strong{color:var(--ink-soft);font-weight:600}
+  .langnav{margin:1.25rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;font-size:.9375rem}
+  .langnav a{font-weight:600}
+  main{display:block}
+  section[lang="ar"]{direction:rtl;text-align:start}
+  .part{border-block-start:1px solid var(--rule);margin-block-start:2.25rem;padding-block-start:1.25rem}
+  h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.25rem,3.6vw,1.625rem);line-height:1.3;margin:1.75rem 0 .75rem;font-weight:600}
+  h3{font-size:1.0625rem;line-height:1.45;margin:1.5rem 0 .375rem;font-weight:650}
+  h3 .num{color:var(--accent-strong);font-variant-numeric:tabular-nums;margin-inline-end:.45rem}
+  p{margin:0 0 .875rem}
+  ul,ol{margin:0 0 1rem;padding-inline-start:1.35rem}
+  li{margin-block:.3rem}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-size:.9em;background:var(--raised);border:1px solid var(--rule);border-radius:3px;padding:.05em .3em;word-break:break-word}
+  .note{margin:1rem 0 1.25rem;padding:.875rem 1rem;background:var(--raised);border:1px solid var(--rule);border-inline-start:1px solid var(--accent);border-radius:var(--radius);font-size:.9375rem;color:var(--ink-soft)}
+  .note p:last-child{margin-block-end:0}
+  .tablewrap{overflow-x:auto;margin:0 0 1.25rem;border:1px solid var(--rule);border-radius:var(--radius);background:var(--raised)}
+  table{border-collapse:collapse;width:100%;font-size:.9375rem;min-width:36rem}
+  caption{text-align:start;padding:.75rem 1rem .25rem;color:var(--ink-faint);font-size:.875rem}
+  th,td{padding:.625rem .875rem;text-align:start;vertical-align:top;border-block-end:1px solid var(--rule)}
+  thead th{font-size:.8125rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+  tbody tr:last-child th,tbody tr:last-child td{border-block-end:0}
+  tbody th{font-weight:600}
+  ul.toc{margin:0 0 1rem;padding-inline-start:1.35rem;columns:2;column-gap:2rem;font-size:.9375rem}
+  ul.toc li{break-inside:avoid}
+  @media (max-width:36rem){ul.toc{columns:1}}
+  footer{margin-block-start:2.5rem;padding-block-start:1.25rem;border-block-start:1px solid var(--rule);color:var(--ink-faint);font-size:.9rem}
+  footer p{margin-block:.25rem}
+  @media print{
+    body{background:#fff;color:#000}
+    .skip,.langnav,.draft{display:none}
+    a{color:#000;text-decoration:underline}
+    .tablewrap{overflow:visible;border-color:#999}
+    table{min-width:0}
+    h2,h3{break-after:avoid}
+    tr,li{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the policy</a>
+<div class="wrap">
+
+  <header class="masthead">
+    <a class="brand" href="../"><span class="wordmark">Midad Studio</span> <span class="arabic" lang="ar" dir="rtl">استوديو مِداد</span></a>
+    <h1>Privacy Policy · سياسة الخصوصية</h1>
+    <p class="meta"><strong>Policy version:</strong> 4.0 · <strong>Effective date:</strong> 2026-11-23 · <strong>Last updated:</strong> 2026-11-23 ·
+      <strong>Applies to:</strong> Midad Studio for Android, package <code>com.midad.studio</code>, version 0.2.3 (versionCode 5).</p>
+    <p class="meta" lang="ar" dir="rtl"><strong>إصدار السياسة:</strong> 4.0 · <strong>تاريخ النفاذ:</strong> 2026-11-23 · <strong>آخر تحديث:</strong> 2026-11-23 · <strong>تنطبق على:</strong> الإصدار 0.2.3 (رقم البناء 5).</p>
+
+    <nav class="langnav" aria-label="Language / اللغة">
+      <a href="#english" lang="en">English</a>
+      <a href="#arabic" lang="ar" dir="rtl">العربية</a>
+      <a href="#contact">Contact / التواصل</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+  <!-- ============================ ENGLISH ============================ -->
+  <section id="english" lang="en" dir="ltr" class="part" aria-labelledby="en-title">
+    <h2 id="en-title">Privacy Policy — English</h2>
+<p><strong>Policy version 4.0.</strong> This policy applies to the Android application <strong>Midad Studio</strong>
+  (package <code>com.midad.studio</code>), version <strong>0.2.3</strong> (versionCode <strong>5</strong>), and to any later
+  version that links to this page.</p>
+<p><strong>Where this policy lives.</strong> This page is the same text published at
+  <a href="https://ahmadmhmdsy.github.io/midad-studio/privacy/">https://ahmadmhmdsy.github.io/midad-studio/privacy/</a>
+  and kept in the source repository at <code>docs/privacy/index.html</code>; the hosted copy is the version of record.
+  The in-app privacy summary (Settings → Privacy) is a short notice, not the policy. Privacy questions and deletion
+  requests can be sent through the project's <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a>.</p>
+<p><strong>At a glance:</strong> editing happens on your phone, there is no account, no ads and no analytics, and the
+  only network request is an optional AI-model download you start yourself. The full text follows.</p>
+<h3>Who we are</h3>
+<ul><li><strong>Publisher / data controller:</strong> Ahmad Mahmoud</li><li><strong>Privacy contact:</strong> the project's <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a></li><li><strong>App:</strong> Midad Studio for Android, package <code>com.midad.studio</code>.</li></ul>
+<p>"We" and "us" below mean that publisher. We operate no server, no account system and no way to identify you from the app. There is no developer-side database about users of this app, because no user data is ever sent to us.</p>
+<h3>The short version</h3>
+<ul><li>Your photos and videos are edited <strong>on your phone</strong> and stay there. Nothing you edit is uploaded to us.</li><li>There are <strong>no accounts, no ads, no analytics, no crash-reporting SDK and no tracking</strong> of any kind.</li><li>The app declares <strong>one permission: internet access</strong>, used only when <em>you</em> ask it to download an optional AI model file.</li><li><strong>Android backup is switched off</strong> for the app, so the app's data is not copied to Google Drive and does not move to a new phone through the operating system.</li><li>You can remove everything by deleting it inside the app or by uninstalling the app. Exports you saved to your gallery are your files and stay until you delete them.</li></ul>
+<h3><span class="num">1</span>What the app processes, where it lives, and whether it leaves your device</h3>
+<div class="tablewrap">
+<table>
+<thead><tr><th scope="col">What</th><th scope="col">Where it is kept</th><th scope="col">Why</th><th scope="col">Leaves your device?</th></tr></thead>
+<tbody>
+<tr><th scope="row">The photo or video you pick</th><td>Read into memory through the Android Photo Picker, for the session you are editing</td><td>So you can edit the item you chose</td><td><strong>No</strong></td></tr>
+<tr><th scope="row">Your edit in progress (layers, adjustments, crop, text, drawing)</th><td>App memory while the studio is open; a design or video draft is not a cloud document and is not uploaded</td><td>So the editor and undo/redo work</td><td><strong>No</strong></td></tr>
+<tr><th scope="row">The exported image or video</th><td>Your own gallery through Android's MediaStore; on Android 7.0–9.0 (API 26–28) a file in app-specific storage is handed to the app you share it with through a non-exported FileProvider</td><td>To give you the finished file</td><td><strong>No</strong>, until you choose to share it</td></tr>
+<tr><th scope="row">Project records: display name, size, date, and a small thumbnail of recent exports</th><td>The app's private storage; thumbnails live in a directory excluded from backup</td><td>So the Projects screen can list recent work</td><td><strong>No</strong></td></tr>
+<tr><th scope="row">Settings: theme, language, last-used studio, model choices</th><td>The app's private storage</td><td>To remember your preferences</td><td><strong>No</strong></td></tr>
+<tr><th scope="row">AI model files (bundled models copied out of the APK, or models you chose to download) and their SHA-256 checksums</th><td>The app's private files directory</td><td>To run the on-device cutout offline</td><td><strong>No</strong></td></tr>
+<tr><th scope="row">The model download request itself: the file URL requested, your IP address, user agent, time and bytes transferred</th><td>The model host's own logs</td><td>To deliver the file you asked for</td><td><strong>Yes — to that host only</strong>, as with any download</td></tr>
+</tbody>
+</table>
+</div>
+<p>We never receive, see or store any of the items in the first six rows. The app has no server to send them to.</p>
+<h3><span class="num">2</span>What we never do</h3>
+<ul><li>No account, sign-in, profile, user identifier or device fingerprint.</li><li>No advertising, ad SDK, advertising ID or attribution SDK.</li><li>No analytics, telemetry, event logging, session recording, heat maps or A/B testing.</li><li>No crash-reporting SDK: if the app crashes, the operating system may write a local log, but nothing is sent to us and we have no way to read it.</li><li>No upload of your media, projects, exports, thumbnails or model choices to us or to any third party.</li><li>No sale, rent or "sharing" of personal data as Google Play defines it.</li><li>No profiling, no automated decision-making, and no training of AI models on your content.</li><li>No access to your camera, microphone, location, contacts, calendar, SMS, call log or phone state.</li></ul>
+<h3><span class="num">3</span>Network use and recipients</h3>
+<p>The app makes <strong>one kind of network request</strong>, and only when you start it:</p>
+<ol><li><strong>An optional AI model download.</strong> The AI Lab lists models from a catalogue shipped inside the app (<code>assets/models/manifest.json</code>). Models marked as bundled are already in the app and never need the network. A model marked for download is fetched only after you tap download. The request is a plain HTTPS <code>GET</code> for one file, issued by the app's own downloader (<code>core/ai/internal/DefaultModelRepository.kt</code>). It sends:
+<ul><li>the URL of the model file,</li><li>a fixed <code>User-Agent</code> string identifying the app,</li><li>an <code>Accept: application/octet-stream</code> header,</li><li>no cookies of our own, and no identifier, account token, advertising ID or device ID.</li></ul> The HTTP stack may add the standard headers any HTTPS client sends. Your IP address is visible to the host, as it is for any download. The file is streamed to a temporary <code>.part</code> file, checked against the SHA-256 checksum recorded in the app's catalogue, and only installed if the checksum matches.</li></ol>
+<p><strong>Current hosts:</strong> the download URLs in the shipped catalogue point to Google Cloud Storage (<code>storage.googleapis.com/mediapipe-models/…</code>) for the MediaPipe models and to Hugging Face (<code>huggingface.co/litert-community/…</code>) for the MODNet portrait-matting model. Each host processes standard connection metadata under its own privacy policy. We receive nothing back from either host: no download receipt, no file list, no identifier.</p>
+<p><strong>There are no other endpoints.</strong> No cloud sync, no remote configuration, no push messaging, no licence check, no update check, no A/B service, no error-reporting endpoint, and no background traffic of any kind.</p>
+<h3><span class="num">4</span>Permissions</h3>
+<p>The 0.2.3 manifest declares exactly one user-facing permission.</p>
+<div class="tablewrap">
+<table>
+<thead><tr><th scope="col">Permission</th><th scope="col">Why it is declared</th><th scope="col">When it is used</th></tr></thead>
+<tbody>
+<tr><th scope="row"><code>android.permission.INTERNET</code></th><td>To download an optional AI model file that you explicitly request</td><td>Only during that download; never for media, telemetry, ads or updates</td></tr>
+</tbody>
+</table>
+</div>
+<p>How the app works without storage, camera or microphone permissions:</p>
+<ul><li><strong>Media is chosen with the Android system Photo Picker</strong> (<code>PickVisualMedia</code> / <code>PickMultipleVisualMedia</code>). The picker returns access to <strong>only the items you select</strong>; the app cannot browse or index your library.</li><li><strong>Exports go to your gallery through MediaStore</strong>, which needs no storage permission on Android 10+. On Android 7.0–9.0 (API 26–28) the same MediaStore path is used where available, and sharing a file from app-specific storage goes through the app's own non-exported FileProvider.</li><li><strong>No camera and no microphone</strong> are requested: the app imports media through the picker and never records.</li><li><strong>No location, contacts, calendar, SMS or phone-state</strong> access is requested.</li></ul>
+<p><em>Technical footnote for reviewers:</em> the merged manifest also contains <code>com.midad.studio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>, a signature-level permission that AndroidX declares for the app itself so that its dynamically registered broadcast receivers are not exported to other apps. It is not a runtime permission, it is not grantable to other apps, and it gives access to no user data. It is not a data-collection permission and it is not requested from the user.</p>
+<p>Earlier drafts of this policy described media or storage permissions and an implied backup story. Those statements did not match the shipped manifest; this version replaces them. The source manifest in <code>app/src/main/AndroidManifest.xml</code> is the authority: it declares <code>INTERNET</code> and explicitly removes the media, storage, foreground-service and wake-lock permissions that libraries would otherwise merge in.</p>
+<h3><span class="num">5</span>Local storage, retention and deletion</h3>
+<p><strong>Retention.</strong> Everything the app stores is on your device and stays until you remove it:</p>
+<ul><li>Project records, thumbnails and settings: until you delete them in the app or uninstall the app.</li><li>AI model files: until you delete the model in the AI Lab's model manager, or uninstall the app. Deleting a model is immediate and cannot be undone; the model can be installed again later.</li><li>Exports: they are ordinary files in your gallery and remain until you delete them with the gallery, a file manager or the app's Projects screen (which deletes the export it created).</li><li><strong>Server-side: none.</strong> There is no retention period because there is no server-side store. We hold no copy of your media, your projects, your settings or your exports.</li></ul>
+<p><strong>Deletion.</strong></p>
+<ul><li><strong>In-app:</strong> delete a project or an export from Projects; delete an installed AI model in the AI Lab's model manager.</li><li><strong>Uninstall:</strong> removing the app deletes its private storage, including project records, settings, thumbnails and installed models. Files you exported to the gallery are not removed by uninstalling — they are yours and must be deleted from the gallery.</li><li><strong>Because nothing is sent to us, there is nothing for us to delete on a server.</strong> If you open a request in <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a> asking us to delete data, we will explain that we hold none and help you delete the local copy.</li></ul>
+<h3><span class="num">6</span>Backup, device transfer and copies</h3>
+<ul><li><strong>Android backup is disabled for the app</strong>: <code>android:allowBackup="false"</code> in the manifest, and the app's data-extraction rules exclude every domain from both cloud backup and device-to-device transfer.</li><li><strong>Thumbnails</strong> are written to a directory that is excluded from backup.</li><li><strong>Downloaded or copied AI models</strong> contain no user data; they are re-installable at any time and are not part of any backup because backup is off.</li><li><strong>Your exports</strong> are ordinary gallery files. Whether your own device backup copies them is decided by your Google or device backup settings, not by us.</li></ul>
+<h3><span class="num">7</span>Children</h3>
+<p>Midad Studio is a general-purpose photo, video, collage and design editor. It is <strong>not directed to children under 13</strong> and is not marketed to them. There are no accounts, no ads, no purchases, no social features, no messaging and no data collection that could identify a child. A child who uses the app edits on the device only; nothing is sent to us. If you believe a child's personal data has reached us, open a request in <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a> and we will act on it; in practice we hold no such data.</p>
+<h3><span class="num">8</span>Why we are allowed to process it (lawful basis)</h3>
+<p>Where the EU/UK GDPR or a similar law applies:</p>
+<ul><li><strong>Performance of the service you asked for</strong> — Article 6(1)(b): reading the item you pick, letting you edit it and writing the export you requested. This happens entirely on your device.</li><li><strong>Consent</strong> — Article 6(1)(a): the optional model download starts only when you tap download. You can cancel it, delete the model afterwards, or use the app with the network off. Withdrawing consent is simply not downloading.</li><li><strong>Legitimate interests</strong> — Article 6(1)(f): keeping the app secure and working, for example verifying a model's checksum before use. Because nothing is transmitted to us, this interest is narrow.</li><li><strong>Legal obligation</strong> — Article 6(1)(c): only if we were compelled to answer a lawful request. We hold no server-side data to produce.</li></ul>
+<p><strong>Special-category data.</strong> We do not ask for it. A photo may contain your face, your family, your home or health information; that content is processed only on your device, at your direction, and is never transmitted to us.</p>
+<p><strong>No automated decisions.</strong> We do not profile you and no decision about you is automated.</p>
+<h3><span class="num">9</span>Your rights</h3>
+<p>Subject to applicable law, you have the right to:</p>
+<ul><li><strong>Access</strong> what is held about you — in practice everything in §1, and it is all on your device.</li><li><strong>Erasure</strong> — delete a project, delete a model, or uninstall the app.</li><li><strong>Portability</strong> — your exports are standard JPEG, PNG or MP4 files that you can copy anywhere.</li><li><strong>Restriction, objection or withdrawal of consent</strong> — stop using the optional download, cancel a download, delete the model, or use the app with the network off.</li><li><strong>Complain</strong> to your national data-protection authority.</li></ul>
+<p>To exercise a right, open a request in <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a>. We answer within 30 days. Because we operate no server and hold no identifier, we may be unable to locate any data about you; in that case we will say so plainly rather than pretend otherwise.</p>
+<h3><span class="num">10</span>Security</h3>
+<ul><li><strong>No server, so no server breach.</strong> The strongest protection is that the data never leaves your phone.</li><li>Media access is limited to the items you pick with the system Photo Picker; there is no broad library access.</li><li>App data sits in Android's app-private storage, protected by the operating system's app sandbox.</li><li>Model downloads use <strong>HTTPS only</strong> (redirects to plain HTTP are refused), and each file is verified against a <strong>SHA-256</strong> checksum before it is used; a mismatch discards the file.</li><li>Backup and device-transfer extraction are disabled, so the system does not copy app data off the device.</li><li>Release builds are minified with R8 and resource shrinking, only the launcher activity is exported, and the FileProvider used for legacy sharing is not exported.</li><li>Limits we cannot remove: a rooted or compromised device, another app with unusually broad access, or files you deliberately share through another app.</li></ul>
+<h3><span class="num">11</span>International transfers</h3>
+<p>We do not transfer personal data internationally, because we do not receive any. If you start a model download, your request goes to the host named in §3, which may be outside your country; that request is made by you to the host and is governed by the host's own terms and safeguards.</p>
+<h3><span class="num">12</span>Third-party components and models</h3>
+<p>The app includes open-source libraries — LiteRT, Media3, Kotlin, Jetpack Compose and AndroidX — and openly licensed segmentation models, all under licences that require no data collection. Their licences and attributions are listed in <strong>Settings → Licenses</strong> and in <a href="https://github.com/ahmadmhmdsy/midad-studio/blob/main/docs/product/MODEL_LICENSES.md">MODEL_LICENSES.md</a>. They are software components, not data-collecting services: none of them contains analytics, advertising or tracking code.</p>
+<p>A segmentation model that is not bundled with the app is installed only if you install it, and its licence is supplied by whoever publishes that model — not by us.</p>
+<h3><span class="num">13</span>Store and operating-system data</h3>
+<p>Google Play and Android may collect install, crash, performance and diagnostic information under their own policies if you install the app through a store. The app ships no analytics or crash SDK, so none of that reporting comes from instrumentation inside the app, and we do not receive analytics or crash data from it.</p>
+<h3><span class="num">14</span>Changes to this policy</h3>
+<ul><li>The policy is versioned and dated. This version is 4.0.</li><li>If a future version adds a feature that changes any statement here — an account, cloud sync, a crash SDK, analytics, ads, a new permission or a new network call — this policy will be updated <strong>before</strong> that version ships, and the in-app privacy text and the published policy will change with it.</li><li>The hosted page is the version of record; the in-app privacy dialog is a summary and links to it.</li></ul>
+<h3 id="contact"><span class="num">15</span>Contact and complaints</h3>
+<ul><li><strong>Privacy contact:</strong> the project's <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a></li><li><strong>Publisher:</strong> Ahmad Mahmoud</li><li><strong>Response time:</strong> within 30 days.</li><li><strong>Complaints:</strong> you may complain to your national data-protection or consumer authority. If you contact us first, we will try to resolve it.</li></ul>
+
+    <hr>
+<h3>Annex A — Google Play Data Safety summary</h3>
+<div class="tablewrap">
+<table>
+<thead><tr><th scope="col">Google Play Data safety question</th><th scope="col">Answer for 0.2.3</th><th scope="col">Why</th></tr></thead>
+<tbody>
+<tr><th scope="row">Does the app collect or share any required user data type?</th><td><strong>No</strong></td><td>Nothing is transmitted off the device to us or to a third party; the only request is a model-file fetch that carries no user data</td></tr>
+<tr><th scope="row">Data shared with third parties</th><td><strong>None</strong></td><td>No SDK, no server, no sale</td></tr>
+<tr><th scope="row">Encrypted in transit</th><td>Not applicable — no data collected; the optional model download uses HTTPS</td><td>§3</td></tr>
+<tr><th scope="row">Users can request data deletion</th><td>Not applicable — no server-side data; in-app delete and uninstall remove everything local</td><td>§5, §9</td></tr>
+<tr><th scope="row">Ads, analytics, crash reporting</th><td><strong>No</strong></td><td>No ad, analytics or crash SDK; no advertising ID</td></tr>
+</tbody>
+</table>
+</div>
+<p>The full field-by-field form answers are in <a href="https://github.com/ahmadmhmdsy/midad-studio/blob/main/docs/product/DATA_SAFETY.md">DATA_SAFETY.md</a>.</p>
+<h3>Annex B — Version history</h3>
+<div class="tablewrap">
+<table>
+<thead><tr><th scope="col">Version</th><th scope="col">Date</th><th scope="col">Change</th></tr></thead>
+<tbody>
+<tr><th scope="row">4.0</th><td>2026-11-23</td><td>First published version, for 0.2.3 (versionCode 5): added the second download host (Hugging Face for MODNet) and the six-model catalogue; version references and contact details updated.</td></tr>
+<tr><th scope="row">3.0</th><td>2026-11-17</td><td>Rewritten for 0.2.0 (versionCode 2): the single model-download request documented with its host and headers; permissions corrected to <code>INTERNET</code> only plus the AndroidX signature permission footnote; retention and deletion made explicit; full Arabic section added.</td></tr>
+<tr><th scope="row">2.0</th><td>2026-11-17</td><td>First 0.2.0 draft: permissions corrected, backup stated as disabled, storage-permission claims removed. Superseded before publication.</td></tr>
+<tr><th scope="row">1.0-draft</th><td>2026-11-16</td><td>First draft: described media/storage permissions and an implied backup story that did not match the shipped manifest; superseded.</td></tr>
+</tbody>
+</table>
+</div>
+  </section>
+
+  <!-- ============================ ARABIC ============================ -->
+  <section id="arabic" lang="ar" dir="rtl" class="part" aria-labelledby="ar-title">
+    <h2 id="ar-title">سياسة الخصوصية — العربية</h2>
+<p><strong>إصدار السياسة 4.0.</strong> تنطبق هذه السياسة على تطبيق أندرويد <strong>«استوديو مِداد»</strong>
+  (الحزمة <code>com.midad.studio</code>)، الإصدار <strong>0.2.3</strong> (رقم البناء <strong>5</strong>)، وعلى أي إصدار
+  لاحق يشير إلى هذه الصفحة.</p>
+<p><strong>أين تُنشر هذه السياسة:</strong> هذه الصفحة هي النص نفسه المنشور على
+  <a href="https://ahmadmhmdsy.github.io/midad-studio/privacy/">https://ahmadmhmdsy.github.io/midad-studio/privacy/</a>
+  والمحفوظ في مستودع الشيفرة على <code>docs/privacy/index.html</code>؛ والنسخة المستضافة هي المرجع. وملخّص الخصوصية
+  داخل التطبيق (الإعدادات ← الخصوصية) إشعار قصير وليس السياسة. ويمكن إرسال أسئلة الخصوصية وطلبات الحذف عبر
+  <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a>.</p>
+<p><strong>باختصار:</strong> التحرير على هاتفك، ولا حساب ولا إعلانات ولا تحليلات، والطلب الشبكي الوحيد تنزيل
+  اختياري لنموذج ذكاء اصطناعي تبدأه أنت. والنص الكامل يلي.</p>
+<h3>من نحن</h3>
+<ul><li><strong>الناشر / المتحكم بالبيانات:</strong> Ahmad Mahmoud</li><li><strong>للتواصل بشأن الخصوصية:</strong> <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a></li><li><strong>التطبيق:</strong> استوديو مِداد لأندرويد، الحزمة <code>com.midad.studio</code></li></ul>
+<p>لا نُشغّل أي خادم، ولا نملك حسابات مستخدمين، ولا توجد لدينا أي وسيلة للتعرّف عليك من داخل التطبيق. ولا نحتفظ بأي قاعدة بيانات عن المستخدمين، لأن أي بيانات مستخدم لا تُرسل إلينا أصلاً.</p>
+<h3><span class="num">1</span>ما يعالجه التطبيق وأين يبقى</h3>
+<div class="tablewrap">
+<table>
+<thead><tr><th scope="col">ما يعالجه</th><th scope="col">أين يبقى</th><th scope="col">لماذا</th><th scope="col">هل يغادر جهازك؟</th></tr></thead>
+<tbody>
+<tr><th scope="row">الصورة أو الفيديو الذي تختاره</th><td>يُقرأ في الذاكرة عبر منتقي الصور في أندرويد أثناء جلسة التحرير</td><td>لتتمكن من تحرير ما اخترته</td><td><strong>لا</strong></td></tr>
+<tr><th scope="row">تعديلك الجاري (الطبقات، الضبط، القص، النص، الرسم)</th><td>ذاكرة التطبيق أثناء فتح الاستوديو</td><td>ليعمل المحرر والتراجع والإعادة</td><td><strong>لا</strong></td></tr>
+<tr><th scope="row">الملف المصدَّر (صورة أو فيديو)</th><td>معرض الصور في جهازك عبر MediaStore؛ وعلى أندرويد 7.0–9.0 يُسلَّم الملف من تخزين التطبيق الخاص إلى التطبيق الذي تشاركه معه عبر FileProvider غير مُصدَّر</td><td>لتسليمك الملف النهائي</td><td><strong>لا</strong>، إلا إذا اخترت مشاركته</td></tr>
+<tr><th scope="row">سجلات المشاريع: الاسم والحجم والتاريخ ومصغّرة صغيرة لآخر التصديرات</th><td>التخزين الخاص للتطبيق؛ والمصغّرات في مجلد مستثنى من النسخ الاحتياطي</td><td>لتُدرج شاشة «المشاريع» آخر أعمالك</td><td><strong>لا</strong></td></tr>
+<tr><th scope="row">الإعدادات: السمة واللغة وآخر استوديو واختيارات النماذج</th><td>التخزين الخاص للتطبيق</td><td>لتذكّر تفضيلاتك</td><td><strong>لا</strong></td></tr>
+<tr><th scope="row">ملفات نماذج الذكاء الاصطناعي وبصماتها (SHA-256)</th><td>مجلد الملفات الخاص بالتطبيق</td><td>لتشغيل قصّ الموضوع دون اتصال</td><td><strong>لا</strong></td></tr>
+<tr><th scope="row">طلب تنزيل النموذج نفسه: عنوان الملف ووقت الطلب وعنوان IP ووكيل المستخدم وحجم البيانات المنقولة</th><td>سجلات مضيف التنزيل</td><td>لتسليم الملف الذي طلبته</td><td><strong>نعم — إلى ذلك المضيف فقط</strong>، كما في أي تنزيل</td></tr>
+</tbody>
+</table>
+</div>
+<p>لا نتلقى ولا نرى ولا نخزّن أي بند من البنود الستة الأولى. فالتطبيق لا يملك خادماً يرسلها إليه.</p>
+<h3><span class="num">2</span>ما لا نفعله أبداً</h3>
+<ul><li>لا حساب ولا تسجيل دخول ولا ملف مستخدم ولا معرّف جهاز.</li><li>لا إعلانات ولا حزمة إعلانية ولا معرّف إعلاني.</li><li>لا تحليلات ولا تتبّع ولا تسجيل أحداث ولا تسجيل جلسات.</li><li>لا حزمة تقارير أعطال: قد يكتب نظام التشغيل سجلاً محلياً عند الانهيار، لكن لا يُرسَل إلينا شيء ولا يمكننا قراءته.</li><li>لا رفع لوسائطك أو مشاريعك أو تصديراتك إلى أي جهة.</li><li>لا بيع ولا تأجير ولا «مشاركة» للبيانات الشخصية.</li><li>لا تنميط ولا قرارات آلية ولا تدريب نماذج على محتواك.</li><li>لا وصول إلى الكاميرا أو الميكروفون أو الموقع أو جهات الاتصال أو التقويم أو الرسائل.</li></ul>
+<h3><span class="num">3</span>الشبكة والمستلمون</h3>
+<p>يُجري التطبيق <strong>نوعاً واحداً من طلبات الشبكة</strong>، ويبدأه أنت فقط:</p>
+<ul><li><strong>تنزيل اختياري لنموذج ذكاء اصطناعي.</strong> تُقرأ قائمة النماذج من كتالوج مضمَّن في التطبيق (<code>assets/models/manifest.json</code>). النماذج المضمَّنة موجودة داخل التطبيق ولا تحتاج الشبكة. والنموذج المُعلَّم للتنزيل لا يُجلب إلا بعد ضغطك على زر التنزيل: طلب <code>GET</code> واحد عبر HTTPS لملف واحد، يرسل عنوان الملف ووكيل مستخدم ثابتاً وترويسة <code>Accept</code>، دون أي كوكيز خاصة بنا ودون أي معرّف أو رمز حساب. ويظهر عنوان IP الخاص بك للمضيف كما في أي تنزيل. يُحفظ الملف مؤقتاً بامتداد <code>.part</code>، ويُتحقق من بصمة SHA-256 قبل تثبيته.</li><li><strong>المضيفون الحاليون:</strong> عناوين التنزيل في الكتالوج المُضمَّن تشير إلى Google Cloud Storage (<code>storage.googleapis.com/mediapipe-models/…</code>) لنماذج MediaPipe، وإلى Hugging Face (<code>huggingface.co/litert-community/…</code>) لنموذج MODNet لعزل صورة الشخص. ويعالج كل مضيف بيانات الاتصال المعتادة وفق سياسة الخصوصية الخاصة به. ولا نستلم من أي منهما شيئاً.</li><li><strong>لا نقاط اتصال أخرى:</strong> لا مزامنة سحابية، ولا إعدادات عن بُعد، ولا إشعارات، ولا تحقق من ترخيص، ولا فحص تحديثات، ولا أي حركة في الخلفية.</li></ul>
+<h3><span class="num">4</span>الأذونات</h3>
+<p>إصدار 0.2.3 يعلن <strong>إذناً واحداً فقط</strong> موجَّهاً للمستخدم:</p>
+<div class="tablewrap">
+<table>
+<thead><tr><th scope="col">الإذن</th><th scope="col">لماذا</th><th scope="col">متى يُستخدم</th></tr></thead>
+<tbody>
+<tr><th scope="row"><code>android.permission.INTERNET</code></th><td>لتنزيل ملف نموذج ذكاء اصطناعي اختياري تطلبه أنت</td><td>أثناء ذلك التنزيل فقط؛ ولا يُستخدم للوسائط أو التحليلات أو الإعلانات أو التحديثات</td></tr>
+</tbody>
+</table>
+</div>
+<p>كيف يعمل التطبيق دون أذونات تخزين أو كاميرا أو ميكروفون:</p>
+<ul><li><strong>تُختار الوسائط عبر منتقي الصور في أندرويد</strong>، ولا يصل التطبيق إلا إلى العناصر التي تختارها أنت.</li><li><strong>يُكتب التصدير في معرض الصور عبر MediaStore</strong>، ولا يحتاج ذلك إلى إذن تخزين على أندرويد 10 أو أحدث. وعلى أندرويد 7.0–9.0 يُستخدم المسار نفسه حيث يتاح، وتُشارك الملفات عبر FileProvider غير مُصدَّر خاص بالتطبيق.</li><li><strong>لا كاميرا ولا ميكروفون:</strong> الاستيراد عبر المنتقي، والتطبيق لا يسجّل.</li><li><strong>لا موقع ولا جهات اتصال ولا تقويم ولا رسائل ولا حالة هاتف.</strong></li></ul>
+<p><em>ملاحظة تقنية للمراجعين:</em> يتضمن البيان المدمج أيضاً <code>com.midad.studio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>، وهو إذن على مستوى التوقيع تعلنه AndroidX للتطبيق نفسه كي لا تُصدَّر مستقبلات البث المسجّلة ديناميكياً إلى التطبيقات الأخرى. ليس إذناً وقت التشغيل، ولا يُمنح لتطبيقات أخرى، ولا يتيح أي بيانات مستخدم.</p>
+<h3><span class="num">5</span>التخزين المحلي والاحتفاظ والحذف</h3>
+<ul><li>تُحفظ سجلات المشاريع والمصغّرات والإعدادات حتى تحذفها من التطبيق أو تُزيل التطبيق.</li><li>تُحفظ نماذج الذكاء الاصطناعي حتى تحذف النموذج من مدير النماذج في «مختبر الذكاء» أو تُزيل التطبيق.</li><li>تبقى التصديرات في معرض الصور حتى تحذفها من المعرض أو من مدير الملفات أو من شاشة «المشاريع».</li><li><strong>لا يوجد احتفاظ على أي خادم:</strong> لا نخزّن نسخة من وسائطك أو مشاريعك أو إعداداتك.</li><li><strong>الحذف من داخل التطبيق:</strong> احذف المشروع أو التصدير من «المشاريع»، واحذف النموذج من مدير النماذج.</li><li><strong>إزالة التطبيق:</strong> تحذف تخزينه الخاص كاملاً، بينما تبقى الملفات التي صدّرتها إلى المعرض ملكاً لك.</li></ul>
+<h3><span class="num">6</span>النسخ الاحتياطي والنقل بين الأجهزة</h3>
+<ul><li><strong>النسخ الاحتياطي في أندرويد مُعطَّل</strong> (<code>android:allowBackup="false"</code>)، وقواعد استخراج البيانات تستثني جميع النطاقات من النسخ السحابي ومن النقل بين الأجهزة.</li><li><strong>المصغّرات</strong> تُكتب في مجلد مستثنى من النسخ الاحتياطي.</li><li><strong>النماذج</strong> لا تحتوي بيانات مستخدم، ويمكن إعادة تثبيتها، ولا تُنسخ لأن النسخ معطّل.</li><li><strong>تصديراتك</strong> ملفات عادية في المعرض، ويقرر إعداد النسخ الاحتياطي في جهازك ما إذا كانت تُنسخ، لا نحن.</li></ul>
+<h3><span class="num">7</span>الأطفال</h3>
+<p>«استوديو مِداد» محرر عام للصور والفيديو والكولاج والتصميم، و<strong>ليس موجَّهاً إلى الأطفال دون 13 عاماً</strong> ولا يُسوَّق لهم. لا حسابات ولا إعلانات ولا مشتريات ولا ميزات اجتماعية ولا رسائل ولا جمع بيانات تعرّف بالطفل. ومن يستخدمه يحرّر على الجهاز فقط، ولا يُرسل إلينا شيء. وإذا اعتقدت أن بيانات طفل وصلت إلينا فافتح طلباً في <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a>.</p>
+<h3><span class="num">8</span>الأساس القانوني للمعالجة</h3>
+<p>حيث ينطبق نظام حماية البيانات الأوروبي (GDPR) أو ما يشبهه:</p>
+<ul><li><strong>تنفيذ الخدمة التي طلبتها</strong> — المادة 6(1)(b): قراءة ما تختاره وتحريره وكتابة التصدير، وذلك على جهازك بالكامل.</li><li><strong>موافقتك</strong> — المادة 6(1)(a): لا يبدأ تنزيل النموذج إلا بضغطك، ويمكنك إلغاؤه أو حذف النموذج لاحقاً.</li><li><strong>المصلحة المشروعة</strong> — المادة 6(1)(f): إبقاء التطبيق آمناً وعاملاً، مثل التحقق من بصمة النموذج. وهي مصلحة ضيقة لأن شيئاً لا يُرسل إلينا.</li><li><strong>الالتزام القانوني</strong> — المادة 6(1)(c): فقط إذا أُلزمنا قانوناً بالرد، ولا توجد لدينا بيانات خادم نقدّمها.</li></ul>
+<p><strong>البيانات الحساسة:</strong> لا نطلبها. قد تحتوي صورتك على وجهك أو عائلتك أو منزلك أو معلومات صحية، لكن هذا المحتوى يُعالج على جهازك فقط وبناءً على توجيهك، ولا يُرسل إلينا أبداً.</p>
+<h3><span class="num">9</span>حقوقك</h3>
+<p>بحسب القانون المعمول به، لك الحق في:</p>
+<ul><li><strong>الوصول</strong> إلى ما يُحتفظ عنك، وهو كل ما في البند 1، وموجود على جهازك.</li><li><strong>المحو</strong> بحذف مشروع أو نموذج أو بإزالة التطبيق.</li><li><strong>النقل</strong> لأن تصديراتك ملفات JPEG أو PNG أو MP4 قياسية.</li><li><strong>تقييد المعالجة أو الاعتراض أو سحب الموافقة</strong> بالتوقف عن التنزيل الاختياري أو حذف النموذج أو استخدام التطبيق دون اتصال.</li><li><strong>التقدّم بشكوى</strong> إلى هيئة حماية البيانات في بلدك.</li></ul>
+<p>لممارسة حقوقك افتح طلباً في <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a>، وسنرد خلال 30 يوماً. ولأننا لا نُشغّل خادماً ولا نحتفظ بمعرّف، قد لا نتمكن من تحديد أي بيانات عنك، وسنصارحك بذلك بدل الادعاء بغير الحقيقة.</p>
+<h3><span class="num">10</span>الأمان</h3>
+<ul><li><strong>لا خادم، فلا اختراق لخادم.</strong> الحماية الأقوى هي أن البيانات لا تغادر هاتفك.</li><li>الوصول إلى الوسائط مقصور على ما تختاره في منتقي الصور.</li><li>بيانات التطبيق في تخزينه الخاص المحمي بصندوق أندرويد.</li><li>التنزيل عبر <strong>HTTPS فقط</strong> (وتُرفض إعادة التوجيه إلى HTTP)، مع التحقق من <strong>SHA-256</strong> قبل الاستخدام.</li><li>النسخ الاحتياطي والنقل بين الأجهزة معطّلان.</li><li>إصدارات الإصدار مضغوطة بـ R8 مع تقليص الموارد، ولا يُصدَّر سوى نشاط التشغيل، وFileProvider غير مُصدَّر.</li><li>حدود لا يمكننا إزالتها: جهاز مُروَّت أو مخترق، تطبيق آخر بصلاحيات واسعة، أو ملف تشاركه أنت مع تطبيق آخر.</li></ul>
+<h3><span class="num">11</span>النقل الدولي</h3>
+<p>لا ننقل بيانات شخصية دولياً لأننا لا نتلقى أي بيانات. وإذا بدأت تنزيل نموذج، فإن طلبك يذهب إلى المضيف المذكور في البند 3، وقد يكون خارج بلدك، وذلك الطلب تصنعه أنت للمضيف وتنظمه شروطه.</p>
+<h3><span class="num">12</span>المكوّنات والنماذج الخارجية</h3>
+<p>يضمّ التطبيق مكتبات مفتوحة المصدر — LiteRT وMedia3 وKotlin وJetpack Compose وAndroidX — ونماذج تقطيع مفتوحة الترخيص لا تجمع بيانات. تراخيصها وإسناداتها في <strong>الإعدادات ← التراخيص</strong> وفي <a href="https://github.com/ahmadmhmdsy/midad-studio/blob/main/docs/product/MODEL_LICENSES.md">MODEL_LICENSES.md</a>. وهي مكوّنات برمجية لا خدمات تجمع بيانات.</p>
+<p>أي نموذج تقطيع غير مضمَّن في التطبيق لا يُثبَّت إلا إذا ثبّتته أنت، وترخيصه يوفّره ناشره لا نحن.</p>
+<h3><span class="num">13</span>بيانات المتجر والنظام</h3>
+<p>قد تجمع Google Play وأندرويد معلومات التثبيت والأعطال والأداء وفق سياساتها إذا ثبّتت التطبيق من متجر. ولا يضمّ التطبيق أي حزمة تحليلات أو تقارير أعطال، فليس في تلك التقارير شيء من قياسات داخل التطبيق، ولا نتلقى نحن تحليلات أو تقارير أعطال من التطبيق.</p>
+<h3><span class="num">14</span>التغييرات</h3>
+<ul><li>السياسة مُصدَّرة ومؤرَّخة، وهذه النسخة 4.0.</li><li>إذا أضاف إصدار مستقبلي ميزة تغيّر أي عبارة هنا — حساب أو مزامنة أو حزمة أعطال أو تحليلات أو إعلانات أو إذناً جديداً أو اتصالاً جديداً — فسيُحدَّث هذا المستند <strong>قبل</strong> إصدار ذلك الإصدار، مع نص الخصوصية داخل التطبيق وهذه السياسة المنشورة.</li><li>الصفحة المستضافة هي النسخة المرجعية، وملخّص الخصوصية داخل التطبيق يوجزها ويحيل إليها.</li></ul>
+<h3 id="contact-ar"><span class="num">15</span>التواصل والشكاوى</h3>
+<ul><li><strong>للتواصل:</strong> <a href="https://github.com/ahmadmhmdsy/midad-studio/issues">GitHub Issues</a></li><li><strong>الناشر:</strong> Ahmad Mahmoud</li><li><strong>مدة الرد:</strong> خلال 30 يوماً.</li><li><strong>الشكاوى:</strong> يمكنك اللجوء إلى هيئة حماية البيانات أو المستهلك في بلدك، ويسعدنا أن نحاول الحل أولاً.</li></ul>
+    <p><em>الملحقان أ (ملخّص أمان البيانات) وب (سجل الإصدارات) منشوران بالإنجليزية في القسم الإنجليزي أعلاه.</em></p>
+  </section>
+
+  </main>
+
+  <footer>
+    <p><strong>Midad Studio</strong> — privacy policy version 4.0 · 2026-11-23 · app 0.2.3 (<code>com.midad.studio</code>).</p>
+    <p lang="ar" dir="rtl"><strong>استوديو مِداد</strong> — إصدار السياسة 4.0 · 2026-11-23 · الإصدار 0.2.3.</p>
+    <p><a href="../">Midad Studio home</a> · <a href="../#privacy">Privacy on the home page</a> · <a href="#contact">Contact</a> ·
+      This page is self-contained: inline CSS only, no scripts, no fonts, images or CDNs, and it makes no network request.</p>
+  </footer>
+
+</div>
+</body>
+</html>

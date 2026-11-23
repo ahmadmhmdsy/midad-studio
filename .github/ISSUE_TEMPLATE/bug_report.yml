@@ -1,0 +1,100 @@
+name: Bug report
+description: Report a reproducible problem in Midad Studio
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Midad Studio **0.2.3** (versionCode 5) is the current **signed
+        pre-release** and is **not published on Google Play**, so please use a build from the GitHub Releases page
+        and check that the problem still happens on 0.2.3.
+
+        - Search existing issues before filing a new one.
+        - Do **not** attach personal photos, names or private file paths.
+        - Security or privacy problems must not be filed here: use the private reporting link on the new-issue
+          page (see SECURITY.md).
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      description: "Settings shows the version. The current release is 0.2.3 (versionCode 5)."
+      placeholder: "0.2.3"
+    validations:
+      required: true
+  - type: input
+    id: install_source
+    attributes:
+      label: Install source
+      description: Where did this build come from?
+      placeholder: "GitHub Release APK / self-built debug APK / other"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version
+      description: "Include the emulator model if you are testing on one."
+      placeholder: "e.g. Pixel 7, Android 14 (API 34)"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the app is affected?
+      options:
+        - Photo editor
+        - Collage
+        - Design studio
+        - Video editor
+        - AI background removal
+        - Projects
+        - Export or sharing
+        - Settings or licences
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Number the steps, starting from a fresh launch where possible.
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+      description: Include the exact error text shown in the app. Do not paste personal media.
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or logs (optional)
+      description: Crop or remove personal photos, names and file paths before attaching anything.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked that this still happens on the latest release (0.2.3) and searched existing issues.
+          required: true
+        - label: My attachments contain no personal photos, names or other private data.
+          required: true
+        - label: This is not a security or privacy report (those go through SECURITY.md).
+          required: true
