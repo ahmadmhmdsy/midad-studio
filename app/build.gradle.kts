@@ -179,7 +179,7 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
 
     // JVM screenshot rendering: Robolectric renders the real Compose tree with native Skia.
-    testImplementation("org.robolectric:robolectric:4.16.1")
+    testImplementation("org.robolectric:robolectric:4.18.1")
     testImplementation("androidx.test:core:1.6.1")
     testImplementation(platform("androidx.compose:compose-bom:2024.12.01"))
     testImplementation("androidx.compose.ui:ui-test-junit4")
