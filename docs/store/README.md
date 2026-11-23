@@ -106,7 +106,7 @@ submitted to any store.
 | Font scale | 100 % |
 | Frame | no device frame, no burned-in marketing text, no dialogs from other apps; status bar shows time and system icons only |
 | Method | `adb exec-out screencap -p`, then converted to 24-bit PNG (alpha removed) |
-| Demo media | Midad's own exports (the seven template renders), generated gradient stills (a 1200 x 1200 set and one 1600 x 1000 landscape still), and three 3-second gradient clips made locally. No third-party photo, stock image or person appears in any frame |
+| Demo media | Midad's own exports (the seven template renders), generated gradient stills (a 1200 x 1200 set and one 1600 x 1000 landscape still), and three 3-second gradient clips made locally. No third-party photo, stock image or person appears in any frame of this 0.2.0 set (the v0.2.3 set is documented separately) |
 
 ```powershell
 $adb = 'C:\Android\Sdk\platform-tools\adb.exe'
@@ -136,5 +136,7 @@ repository [LICENSE](../../LICENSE); third-party libraries and AI models keep th
 (see [docs/product/MODEL_LICENSES.md](../product/MODEL_LICENSES.md) and
 [docs/product/licenses/](../product/licenses/)).
 
-The demo media are the app's own exports and generated images; no third-party photograph, artwork
-or person appears in this folder.
+The demo media in `screenshots/` are the app's own exports and generated images; no third-party
+photograph, artwork or person appears in that 0.2.0 set. The v0.2.3 set in `screenshots-v023/`
+includes one CC0 public-domain test photograph, documented with its licence, source, crop and
+hashes in [screenshots-v023/README.md](screenshots-v023/README.md).
